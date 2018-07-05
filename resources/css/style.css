@@ -3,3 +3,20 @@
     border-width: 1px;
     border-style: solid;
 }
+
+@font-face {
+    font-family: "LCD Standard";
+    src: url(../../resources/fonts/LcdStd.otf);
+  }
+
+  .countdown-timer {
+    font-family: 'LCD Standard', Georgia;
+    font-size: 1.25em; 
+    color: Pink;
+    background-color: black;
+    word-spacing: 0.25em;
+    width: 33%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
