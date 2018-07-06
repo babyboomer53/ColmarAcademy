@@ -7,16 +7,33 @@
 @font-face {
     font-family: "LCD Standard";
     src: url(../../resources/fonts/LcdStd.otf);
-  }
+}
 
-  .countdown-timer {
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-left: 1em;
+    float: left;
+}
+
+p {
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+header p span {
+    color: aqua;
+}
+.countdown-timer {
     font-family: 'LCD Standard', Georgia;
-    font-size: 1.25em; 
-    color: Pink;
+    font-size: 1.25em;
+    color: Aqua;
     background-color: black;
     word-spacing: 0.25em;
     width: 33%;
     text-align: center;
     margin: 0 auto;
-  }
-  
+}
