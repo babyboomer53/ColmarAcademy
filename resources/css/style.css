@@ -9,28 +9,56 @@
     src: url(../../resources/fonts/LcdStd.otf);
 }
 
-header {
+.flex-container {
     display: flex;
+    width: 960px;
+    margin: 0 auto;
     align-items: center;
 }
 
-header img {
-    margin-left: 1em;
-    float: left;
+header {
+    
+    justify-content: space-between;
+    background: linear-gradient(to right, beige, beige, black, Black);
 }
 
-p {
+header div {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    }
+    
+header img {
+    height: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+header p {
     font-family: Helvetica;
     font-weight: 700;
+    background-color: white;
 }
 
-header p span {
-    color: aqua;
+header span {
+    color: lightgreen;
+    background-color: black;
 }
+
+header nav {
+    margin-right: 1em;
+    }
+    
+a {
+    font-family: Helvetica;
+    color: Beige;
+    text-decoration: none;
+}
+
 .countdown-timer {
     font-family: 'LCD Standard', Georgia;
     font-size: 1.25em;
-    color: Aqua;
+    color: beige;
     background-color: black;
     word-spacing: 0.25em;
     width: 33%;
