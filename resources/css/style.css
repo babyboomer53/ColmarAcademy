@@ -17,7 +17,7 @@
 }
 
 header {
-    
+
     justify-content: space-between;
     background: linear-gradient(to right, beige, beige, black, Black);
 }
@@ -26,15 +26,15 @@ header div {
     display: flex;
     align-items: center;
     margin-left: 1em;
-    }
-    
+}
+
 header img {
     height: 100%;
     float: left;
     background-color: rgba(0, 0, 0, 1);
 }
 
-header p {
+header div p {
     font-family: Helvetica;
     font-weight: 700;
     background-color: white;
@@ -47,9 +47,9 @@ header span {
 
 header nav {
     margin-right: 1em;
-    }
-    
-a {
+}
+
+header nav a {
     font-family: Helvetica;
     color: Beige;
     text-decoration: none;
