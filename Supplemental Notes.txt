@@ -13,3 +13,4 @@ I'm bothered by the links in the navigation bar that don't have the standard dec
 I was fiddling around with the site when I inadvertently deleted the headers background. While perusing the code to figure what I had done, I happened to glance up at the page. Much to my surprise, I found the new look rather pleasing. Although I figured out how I had deleted the background, I decided to leave well enough alone. It was a lucky accident.
 
 When I added the "thesis" section, I found that I had a duplicate ID named "tile-container." Up until that point, merging the separate sections of code had been relatively seamless and uneventful. I changed the identifier, tile-container, from an ID to a class and made the appropriate change in the CSS file.
+
