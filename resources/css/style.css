@@ -9,6 +9,17 @@
     src: url(../../resources/fonts/LcdStd.otf);
 }
 
+@font-face {
+    font-family: "Ringbearer Medium";
+    src: url(../../resources/fonts/RINGM.ttf) format("truetype");
+}
+
+body {
+    background-image: url("../../resources/images/parc-attractions-haut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .flex-container {
     display: flex;
     width: 960px;
@@ -17,30 +28,42 @@
 }
 
 header {
-
     justify-content: space-between;
-    background: linear-gradient(to right, beige, beige, black, Black);
+    background: linear-gradient(to Right, Beige, Black);
+    opacity: 1;
+    background: None;
+    opacity: 0.625;
 }
 
 header div {
     display: flex;
     align-items: center;
-    margin-left: 1em;
+    margin-left: 1.5em;
+    padding: 1em;
 }
 
 header img {
-    height: 100%;
     float: left;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: red;
 }
 
-header div p {
-    font-family: Helvetica;
-    font-weight: 700;
-    background-color: white;
+#logotype {
+    padding: 0;
+    border: 2px solid black;
 }
 
-header span {
+#logotype div {
+    font-family: "Ringbearer Medium", Helvetica;
+    font-size: Bold;
+    height: 74px;
+    padding: 0;
+    border: 0;
+    color: Black;
+    background-color: White;
+    margin: 0;
+}
+
+#logotype #academy {
     color: lightgreen;
     background-color: black;
 }
@@ -52,6 +75,7 @@ header nav {
 header nav a {
     font-family: Helvetica;
     color: Beige;
+    margin: 0 0.5em;
     text-decoration: none;
 }
 
@@ -64,4 +88,5 @@ header nav a {
     width: 33%;
     text-align: center;
     margin: 0 auto;
+    background: none;
 }
