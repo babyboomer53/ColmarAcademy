@@ -55,7 +55,7 @@ header img {
 #logotype div {
     font-family: "Ringbearer Medium", Helvetica;
     font-size: Bold;
-    height: 74px;
+    height: 72px;
     padding: 0;
     border: 0;
     color: Black;
@@ -74,6 +74,7 @@ header nav {
 
 header nav a {
     font-family: Helvetica;
+    font-size: 1.25em;
     color: Beige;
     margin: 0 0.5em;
     text-decoration: none;
