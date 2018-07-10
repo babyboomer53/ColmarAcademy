@@ -31,7 +31,6 @@ body {
 header {
     justify-content: space-between;
     background: linear-gradient(to Right, Beige, Black);
-    opacity: 1;
     background: None;
     opacity: 0.625;
 }
@@ -300,6 +299,10 @@ footer {
     justify-content: space-between;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 .copyright-notice span {
     font-family: Helvetica, Arial;
 }
@@ -314,4 +317,20 @@ footer {
     text-align: center;
     margin: 0 auto;
     background: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.sticky a {
+    color: Black;
+}
+
+.sticky + .content {
+    padding-top: 60px;
 }
