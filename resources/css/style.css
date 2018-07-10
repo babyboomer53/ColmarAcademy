@@ -80,6 +80,226 @@ header nav a {
     text-decoration: none;
 }
 
+.horizontal-tile-large {
+    Padding: 24px 32px;
+    Background-color: lightgray;
+}
+
+.horizontal-tile-large img {
+    width: 60%;
+    Margin-right: 2em;
+    Float: left;
+    box-shadow: inset 5px 8px 8px Black;
+}
+
+.horizontal-tile-large p {
+    text-shadow: 2px 2px 2px black;
+}
+
+.horizontal-tile-large p:nth-child(1) {
+    font-family: Helvetica, Arial;
+    Color: gray;
+    font-size: 2em;
+    Font-weight: 700;
+}
+
+.horizontal-tile-large p:nth-child(2) {
+    font-family: Times, Arial;
+    Color: gray;
+    font-size: 2em;
+    Font-weight: 700;
+}
+
+.horizontal-tile-large p:nth-child(3) {
+    font-family: Courier, Arial;
+    Color: gray;
+    font-size: 2em;
+    Font-weight: 700;
+}
+
+#top {
+    align-items: start;
+    padding-right: 0;
+    padding: 32px 24px;
+    font-family: helvetica, arial;
+    color: gray;
+    background-color: lightgray;
+}
+
+.vertical-tile-large {
+    width: 60%;
+}
+
+.vertical-tile-large img {
+    max-width: 100%;
+    height: auto;
+}
+
+.vertical-tile-large p:nth-child(1) {
+    font-size: 2em;
+    Font-weight: 700;
+    text-shadow: inset 2px 2px 2px black;
+}
+
+.vertical-tile-large p:nth-child(2) {
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1em;
+    Pick save
+}
+
+.vertical-tile-large p:nth-child(3) {
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1em;
+    margin-top: 48px;
+}
+
+#tile-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 1.5em;
+}
+
+.horizontal-tile-small {
+    padding: 1em;
+}
+
+.horizontal-tile-small img {
+    Width: 35%;
+    Height: auto;
+    float: left;
+}
+
+#curriculum {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 72px;
+    background-color: Beige;
+}
+
+#curriculum h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.vertical-tile-small {
+    width: 30%;
+
+    font-family: Helvetica, Arial;
+    color: Gray;
+    Background-color: White;
+    box-shadow: inset 5px 5px 15px 10px;
+}
+
+.vertical-tile-small:nth-child(n + 1) {
+    Margin-bottom: 32px;
+}
+
+.vertical-tile-small img {
+    max-width: 100%;
+    height: auto;
+}
+
+.vertical-tile-small div {
+    margin-left: 16px;
+}
+
+.vertical-tile-small p:nth-child(1) {
+    font-size: 2em;
+    Font-weight: 700;
+    margin-top: 16px;
+}
+
+.vertical-tile-large p:nth-child(2) {
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1em;
+}
+
+.vertical-tile-large p:nth-child(3) {
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1em;
+    margin-top: 48px;
+}
+
+#thesis {
+  flex-wrap: wrap; /* this was the fix! */
+  padding-top: 0;
+  align-items: start;
+  background-color: Beige;
+  Padding-left: 1.5em;
+}
+
+#thesis h1:first-child {
+  
+font-size: 2.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.video-container {
+  
+  width: 57%;
+  font-family: Helvetica, Arial;
+  color: Gray;
+  Background-color: Beige;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.video-container p:nth-child(2) {
+  font-size: 2em;
+  Font-weight: 700;
+}
+
+.vertical-tile-large p:nth-child(3) {
+  font-family: Helvetica, Arial;
+  Color: Inherit;
+  font-size: 1em;Pick save
+}
+
+.vertical-tile-large p:nth-child(3) {
+  font-family: Helvetica, Arial;
+  Color: Inherit;
+  font-size: 1em;
+  margin-top: 48px;
+}
+
+  .tile-container {
+    display: inline-flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 1.5em;
+  }
+  
+  .horizontal-tile-small {
+    padding: 1em;
+    width: 100%;
+  }
+  
+  .horizontal-tile-small img {
+    Width: 35%;
+    Height: auto;
+    float: left;
+}
+
+footer {
+    font-family: "Ringbearer Medium";
+    background-color: beige;
+    justify-content: space-between;
+}
+
+.copyright-notice span {
+    font-family: Helvetica, Arial;
+}
 .countdown-timer {
     font-family: 'LCD Standard', Georgia;
     font-size: 1.25em;
