@@ -16,6 +16,7 @@
 
 body {
     background-image: url("../../resources/images/parc-attractions-haut.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -227,65 +228,67 @@ header nav a {
 }
 
 #thesis {
-  flex-wrap: wrap; /* this was the fix! */
-  padding-top: 0;
-  align-items: start;
-  background-color: Beige;
-  Padding-left: 1.5em;
+    flex-wrap: wrap;
+    /* this was the fix! */
+    padding-top: 0;
+    align-items: start;
+    background-color: Beige;
+    Padding-left: 1.5em;
 }
 
 #thesis h1:first-child {
-  
-font-size: 2.5em;
-  text-align: center;
-  width: 100%;
+
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
 }
 
 .video-container {
-  
-  width: 57%;
-  font-family: Helvetica, Arial;
-  color: Gray;
-  Background-color: Beige;
+
+    width: 57%;
+    font-family: Helvetica, Arial;
+    color: Gray;
+    Background-color: Beige;
 }
 
 .video-container video {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .video-container p:nth-child(2) {
-  font-size: 2em;
-  Font-weight: 700;
+    font-size: 2em;
+    Font-weight: 700;
 }
 
 .vertical-tile-large p:nth-child(3) {
-  font-family: Helvetica, Arial;
-  Color: Inherit;
-  font-size: 1em;Pick save
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1em;
+    Pick save
 }
 
 .vertical-tile-large p:nth-child(3) {
-  font-family: Helvetica, Arial;
-  Color: Inherit;
-  font-size: 1em;
-  margin-top: 48px;
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1em;
+    margin-top: 48px;
 }
 
-  .tile-container {
+.tile-container {
     display: inline-flex;
     overflow: hidden;
     flex-direction: column;
     width: 40%;
     margin-left: 1.5em;
-  }
-  
-  .horizontal-tile-small {
+}
+
+.horizontal-tile-small {
     padding: 1em;
     width: 100%;
-  }
-  
-  .horizontal-tile-small img {
+}
+
+.horizontal-tile-small img {
     Width: 35%;
     Height: auto;
     float: left;
@@ -300,6 +303,7 @@ footer {
 .copyright-notice span {
     font-family: Helvetica, Arial;
 }
+
 .countdown-timer {
     font-family: 'LCD Standard', Georgia;
     font-size: 1.25em;
