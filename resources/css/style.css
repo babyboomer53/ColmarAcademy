@@ -120,7 +120,7 @@ header nav a {
 }
 
 #bulletins {
-    align-items: start;
+    justify-content: flex-start;
     padding-right: 0;
     font-family: helvetica, arial;
     color: gray;
@@ -140,7 +140,7 @@ header nav a {
 .vertical-tile-large p:nth-child(1) {
     font-size: 2em;
     Font-weight: 700;
-    text-shadow: inset 2px 2px 2px black;
+    text-shadow: 2px 2px black;
 }
 
 .vertical-tile-large p:nth-child(2) {
@@ -231,7 +231,7 @@ header nav a {
     flex-wrap: wrap;
     /* this was the fix! */
     padding-top: 0;
-    align-items: start;
+    justify-content: flex-start;
     background-color: Beige;
 
 }
@@ -265,7 +265,6 @@ header nav a {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1em;
-    Pick save
 }
 
 .vertical-tile-large p:nth-child(3) {
