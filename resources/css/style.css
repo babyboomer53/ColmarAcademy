@@ -4,6 +4,10 @@
     border-style: solid;
 }
 
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 @font-face {
     font-family: "LCD Standard";
     src: url(../../resources/fonts/LcdStd.otf);
@@ -79,10 +83,6 @@ header nav a {
     text-decoration: none;
 }
 
-.horizontal-tile-large {
-    Background-color: lightgray;
-}
-
 #banner div {
     width: 40%;
 }
@@ -122,9 +122,8 @@ header nav a {
 #bulletins {
     justify-content: flex-start;
     padding-right: 0;
-    font-family: helvetica, arial;
     color: gray;
-    background-color: lightgray;
+    background-color: Beige;
 }
 
 .vertical-tile-large {
@@ -320,6 +319,10 @@ footer a {
     background: none;
 }
 
+footer,
+section {
+    background-color: beige;
+}
 .sticky {
     position: fixed;
     top: 0;
