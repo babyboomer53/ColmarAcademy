@@ -42,19 +42,18 @@ header div {
     padding: 1em;
 }
 
-header img {
+#logo img {
     float: left;
     background-color: red;
 }
 
-#logotype {
+#logo {
     padding: 0;
     border: 2px solid black;
 }
 
-#logotype div {
+#logo div {
     font-family: "Ringbearer Medium", Helvetica;
-    font-size: Bold;
     height: 72px;
     padding: 0;
     border: 0;
@@ -63,7 +62,7 @@ header img {
     margin: 0;
 }
 
-#logotype #academy {
+#logo #academy {
     color: lightgreen;
     background-color: black;
 }
@@ -81,15 +80,18 @@ header nav a {
 }
 
 .horizontal-tile-large {
-    Padding: 24px 32px;
     Background-color: lightgray;
+}
+
+#banner div {
+    width: 40%;
 }
 
 .horizontal-tile-large img {
     width: 60%;
     Margin-right: 2em;
     Float: left;
-    box-shadow: inset 5px 8px 8px Black;
+    padding: 32px 24px;
 }
 
 .horizontal-tile-large p {
@@ -117,10 +119,9 @@ header nav a {
     Font-weight: 700;
 }
 
-#top {
+#bulletins {
     align-items: start;
     padding-right: 0;
-    padding: 32px 24px;
     font-family: helvetica, arial;
     color: gray;
     background-color: lightgray;
@@ -128,10 +129,11 @@ header nav a {
 
 .vertical-tile-large {
     width: 60%;
+    padding: 32px 24px;
 }
 
 .vertical-tile-large img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -145,7 +147,6 @@ header nav a {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1em;
-    Pick save
 }
 
 .vertical-tile-large p:nth-child(3) {
@@ -172,54 +173,54 @@ header nav a {
     float: left;
 }
 
-#curriculum {
-    justify-content: space-around;
+#courses {
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0 72px;
     background-color: Beige;
 }
 
-#curriculum h1 {
+#courses h1 {
     width: 100%;
     text-align: center;
     font-size: 2.5em;
 }
 
-.vertical-tile-small {
-    width: 30%;
-
+#courses .vertical-tile-small {
+    width: 25%;
     font-family: Helvetica, Arial;
     color: Gray;
     Background-color: White;
     box-shadow: inset 5px 5px 15px 10px;
+    margin: 0 16px;
 }
 
-.vertical-tile-small:nth-child(n + 1) {
+#courses .vertical-tile-small:nth-child(n + 1) {
     Margin-bottom: 32px;
 }
 
-.vertical-tile-small img {
-    max-width: 100%;
+#courses .vertical-tile-small img {
     height: auto;
+    max-width: 100%;
+
 }
 
-.vertical-tile-small div {
+#courses .vertical-tile-small div {
     margin-left: 16px;
 }
 
-.vertical-tile-small p:nth-child(1) {
+#courses .vertical-tile-small p:nth-child(1) {
     font-size: 2em;
     Font-weight: 700;
     margin-top: 16px;
 }
 
-.vertical-tile-large p:nth-child(2) {
+#courses .vertical-tile-large p:nth-child(2) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1em;
 }
 
-.vertical-tile-large p:nth-child(3) {
+#courses .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1em;
@@ -232,7 +233,7 @@ header nav a {
     padding-top: 0;
     align-items: start;
     background-color: Beige;
-    Padding-left: 1.5em;
+
 }
 
 #thesis h1:first-child {
@@ -243,8 +244,8 @@ header nav a {
 }
 
 .video-container {
-
-    width: 57%;
+    padding-left: 1.5em;
+    width: 54%;
     font-family: Helvetica, Arial;
     color: Gray;
     Background-color: Beige;
@@ -300,6 +301,7 @@ footer {
 }
 
 footer a {
+    color: inherit;
     text-decoration: none;
 }
 
