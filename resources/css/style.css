@@ -279,7 +279,8 @@ header nav a {
 
 footer {
     font-family: "Ringbearer Medium";
-    background-color: beige;
+    color: beige;
+    background-color: Black !Important;
     justify-content: space-between;
 }
 
@@ -290,6 +291,11 @@ footer a {
 
 .copyright-notice span {
     font-family: Helvetica, Arial;
+
+}
+
+section {
+    margin-bottom: 1em !Important;
 }
 
 .countdown-timer {
@@ -315,7 +321,7 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .sticky + .content {
