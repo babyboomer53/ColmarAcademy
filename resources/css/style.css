@@ -1,7 +1,5 @@
 * {
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
+    /*border: 1px solid black;*/
 }
 
 html {
@@ -19,13 +17,8 @@ html {
 }
 
 body {
-position: relative
-    /*
-    background-image: url("../../resources/images/parc-attractions-haut.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
+    margin: 0;
+    /*position: relative;*/
 }
 
 .flex-container {
@@ -40,7 +33,6 @@ header {
     justify-content: space-between;
     height: 80px;
     background: linear-gradient(to Right, Red, rgba(10, 10, 10, 1));
-    border-radius: 8px;
 }
 
 header div {
@@ -61,7 +53,6 @@ header div {
     color: Black;
     background-color: White;
     box-shadow: inset 2px 2px 8px 2px;
-    border-radius: 4px;
 }
 
 header nav {
@@ -73,6 +64,10 @@ header nav a {
     color: beige;
     margin: 0 1em;
     text-decoration: none;
+}
+
+#banner {
+     margin-top: 6em;"
 }
 
 #banner div {
@@ -230,7 +225,7 @@ header nav a {
 }
 
 .video-container {
-    padding-left: 1.5em;
+    margin-left: 1.5em;
     width: 54%;
     font-family: Helvetica, Arial;
     color: Gray;
@@ -310,22 +305,12 @@ footer a {
 footer,
 section {
     background-color: beige;
-    border-radius: 10px;
-    margin-bottom: 1em!Important;
+    /*border-radius: 10px;*/
+    margin-bottom: 1em !Important;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
-}
-
-.sticky a {
-    color: Black;
-}
-
-.sticky + .content {
-    padding-top: 60px;
+footer,
+#banner,
+section {
+    box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
 }

@@ -12,16 +12,16 @@
 
 <body>
     <div id="parent-container" style="position: relative;">
-        
-            <div id="video-container" style="z-index: -1; height: auto; position: fixed; width: 100%">
-                <video autoplay loop muted style="width: 100%; height: 100%;">
-        <source id="mp4" src="./resources/videos/4723859-preview.mp4" type="video/mp4">
-        <p>Your user agent does not support the HTML 5 video element.</p>
-    </video>
-            </div>
+
+        <div id="video-container" style="z-index: -1; height: auto; position: fixed; width: 100%">
+            <video autoplay muted style="width: 100%; height: 100%;">
+                <source id="mp4" src="./resources/videos/4723859-preview.mp4" type="video/mp4">
+                <p>Your user agent does not support the HTML 5 video element.</p>
+            </video>
         </div>
-<div id="content-container" style="position: absolute; left: 0; top: 0; right: 0;">
-        <header id="navbar" class="flex-container">
+    </div>
+    <div id="content-container" style="position: absolute; left: 0; top: 0; right: 0;">
+        <header id="navbar" class="flex-container" style="position: fixed; left: 0; right: 0">
             <div id="logo">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2015702/ic-logo-150.svg" alt="Colmar Academy" />
                 <div id="logotype">
@@ -37,7 +37,7 @@
 
         </header>
 
-        <section id="banner" class="horizontal-tile-large flex-container" style="margin-top: 4.5em; z-index: 10">
+        <section id="banner" class="horizontal-tile-large flex-container" style="z-index: 0;">
             <h2 style="display: none;">Inspiration</h2>
             <img src="./resources/images/banner.jpg" alt="learn something new" />
             <div>
@@ -80,66 +80,100 @@
         </section>
 
         <section id="courses" class="flex-container">
-        <h2>Start learning</h2>
-        <div class="vertical-tile-small">
-            <img src="./resources/images/course-software.jpg" alt="software engineering" />
-            <div>
-                <p>Software Engineering</p>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
+            <h2>Start learning</h2>
+            <div class="vertical-tile-small">
+                <img src="./resources/images/course-software.jpg" alt="software engineering" />
+                <div>
+                    <p>Software Engineering</p>
+                    <p>COURSES</p>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
             </div>
-        </div>
-        <div class="vertical-tile-small">
-            <img src="./resources/images/course-computer-art.jpg" alt="Computer art" />
-            <div>
-                <p>Software Engineering</p>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="vertical-tile-small">
+                <img src="./resources/images/course-computer-art.jpg" alt="Computer art" />
+                <div>
+                    <p>Software Engineering</p>
+                    <p>COURSES</p>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
             </div>
-        </div>
-        <div class="vertical-tile-small">
-            <img src="./resources/images/course-design.jpg" alt="Design" />
-            <div>
-                <p>Software Engineering</p>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="vertical-tile-small">
+                <img src="./resources/images/course-design.jpg" alt="Design" />
+                <div>
+                    <p>Software Engineering</p>
+                    <p>COURSES</p>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
             </div>
-        </div>
-        <div class="vertical-tile-small">
-            <img src="./resources/images/course-data.jpg" alt="Data" />
-            <div>
-                <p>Software Engineering</p>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="vertical-tile-small">
+                <img src="./resources/images/course-data.jpg" alt="Data" />
+                <div>
+                    <p>Software Engineering</p>
+                    <p>COURSES</p>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
             </div>
-        </div>
-        <div class="vertical-tile-small">
-            <img src="./resources/images/course-business.jpg" alt="Business" />
-            <div>
-                <p>Software Engineering</p>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="vertical-tile-small">
+                <img src="./resources/images/course-business.jpg" alt="Business" />
+                <div>
+                    <p>Software Engineering</p>
+                    <p>COURSES</p>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
             </div>
-        </div>
-        <div class="vertical-tile-small">
-            <img src="./resources/images/course-marketing.jpg" alt="Marketing" />
-            <div>
-                <p>Software Engineering</p>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="vertical-tile-small">
+                <img src="./resources/images/course-marketing.jpg" alt="Marketing" />
+                <div>
+                    <p>Software Engineering</p>
+                    <p>COURSES</p>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    
+        <section id="thesis" class="flex-container">
+            <h2> Thesis exhibit</h2>
+            <div class="video-container">
+                <video autoplay loop muted style="width: 100%; height: 100%;">
+                    <source id="mp4-again" src="./resources/videos/thesis.mp4">
+                    <p>Your user agent does not support the HTML 5 video element.</p>
+                </video>
+                <p>Reimagine urban</p>
+                <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div>
+            <div class="tile-container">
+                <div class="horizontal-tile-small">
+                    <img src="./resources/images/thesis-fisma.jpg" alt="" />
+                    <div>
+                        <p>Orientation date. So what will happen if this text becomes too long?</p>
+                    </div>
+                </div>
+                <div class="horizontal-tile-small">
+                    <img src="./resources/images/thesis-now-and-then.jpg" alt="" />
+                    <div>
+                        <p>Orientation date</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="flex-container">
+            <h2 class="copyright-notice"><span>&copy; </span>2018 Colmar Academy. All rights reserved</h2>
+            <div class="navbar">
+                <a href="#" target="_blank">Terms</a>
+                <a href="#" target="_blank">Privacy</a>
+            </div>
+        </footer>
+
+        <div class="countdown-timer" data-countdown="2018/10/11 17:00:00"></div>
+
     </div>
 
-    <!--    <div class="countdown-timer" data-countdown="2018/10/11 17:00:00"></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.js"></script>
     <script src="./resources/scripts/scroll.js"></script>
-    <script src="./resources/scripts/sticky.js"></script>
+    <!-- <script src="./resources/scripts/sticky.js"></script> -->
     <script src="./resources/scripts/countdown.js"></script>
 </body>
 
