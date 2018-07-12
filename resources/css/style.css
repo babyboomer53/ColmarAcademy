@@ -318,10 +318,6 @@ section {
     opacity: 1;
 }
 
-.sticky a {
-    color: Black;
-}
-
 .sticky + .content {
     padding-top: 60px;
 }
