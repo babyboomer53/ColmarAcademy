@@ -19,10 +19,13 @@ html {
 }
 
 body {
+position: relative
+    /*
     background-image: url("../../resources/images/parc-attractions-haut.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    */
 }
 
 .flex-container {
@@ -308,6 +311,7 @@ footer,
 section {
     background-color: beige;
     border-radius: 10px;
+    margin-bottom: 1em!Important;
 }
 
 .sticky {
