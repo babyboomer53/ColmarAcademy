@@ -1,0 +1,59 @@
+* {
+}
+
+html {
+  font-family: Helvetica;
+}
+
+@font-face {
+  font-family: "Ringbearer Medium";
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2015702/RINGM.TTF)
+    format("truetype");
+}
+
+.flex-container {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+header {
+  width: auto !important;
+  justify-content: space-between;
+  height: 80px;
+  background: linear-gradient(to Right, Red, rgba(10, 10, 10, 1));
+  border-radius: 8px;
+}
+
+header div {
+  display: flex;
+  font-size: 12px;
+  font-family: "ringbearer medium";
+}
+
+#logo {
+  background-color: red;
+  
+}
+
+#logotype {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  color: Black;
+  background-color: White;
+  box-shadow: inset 2px 2px 8px 2px;
+  border-radius: 4px;
+}
+
+header nav {
+  margin-right: 1em;
+}
+
+header nav a {
+  font-family: inherit;
+  color: beige;
+  margin: 0 1em;
+  text-decoration: none;
+}
