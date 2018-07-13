@@ -1,0 +1,69 @@
+* {
+  Border: 1px solid black;
+}
+
+.flex-container {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    align-items: center;
+  padding: 32px 24px;
+  color: gray;
+  background-color: beige;
+  font-family: Helvetica, Arial;
+}
+
+#curriculum {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 72px;
+  background-color: Beige;
+}
+
+#curriculum h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.vertical-tile-small {
+  width: 30%;
+  
+  font-family: Helvetica, Arial;
+  color: Gray;
+  Background-color: White;
+  box-shadow: inset 5px 5px 15px 10px;
+}
+
+.vertical-tile-small:nth-child(n+1) {
+  Margin-bottom: 32px;
+}
+
+.vertical-tile-small img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vertical-tile-small div {
+  margin-left: 16px;
+}
+
+.vertical-tile-small p:nth-child(1) {
+  font-size: 2em;
+  Font-weight: 700;
+  margin-top: 16px;
+}
+
+.vertical-tile-large p:nth-child(2) {
+  font-family: Helvetica, Arial;
+  Color: Inherit;
+  font-size: 1em;
+}
+
+.vertical-tile-large p:nth-child(3) {
+  font-family: Helvetica, Arial;
+  Color: Inherit;
+  font-size: 1em;
+  margin-top: 48px;
+}
+
