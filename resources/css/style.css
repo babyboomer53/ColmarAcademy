@@ -157,7 +157,6 @@ header nav a {
 #courses {
     justify-content: center;
     flex-wrap: wrap;
-    /*background-color: Beige;*/
 }
 
 #courses h2 {
@@ -167,30 +166,50 @@ header nav a {
 }
 
 #courses .vertical-tile-small {
+    position: relative;
     width: 25%;
     font-family: Helvetica, Arial;
     color: Gray;
     Background-color: White;
-    /*box-shadow: inset 5px 5px 15px 10px;*/
     margin: 0 16px;
+    border-radius: 6px;
 }
+
+.vertical-tile-small img {
+    width: 100%;
+    height: auto;
+    z-index: -2;
+    border-radius: 6px;
+}
+
+.course-detail {
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.shadow {
+    position: Absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
+}
+
 
 #courses .vertical-tile-small:nth-child(n + 1) {
     Margin-bottom: 32px;
 }
 
-/*
-#courses .vertical-tile-small div {
-    margin-left: 16px;
-}
-*/
+
 #courses .vertical-tile-small p:nth-child(1) {
     font-size: 2em;
     Font-weight: 700;
     margin-top: 16px;
 }
 
-#courses .vertical-tile-large p:nth-child(2) {
+#courses .vertical-tile-small p:nth-child(2) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1em;
@@ -309,21 +328,4 @@ footer,
 #banner,
 section {
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
-}
-
-.shadow {
-    box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
-    z-index: 1;
-}
-
-.shadow img {
-    height: auto;
-    width: 100%;
-    position: relative;
-    z-index: -2;
-}
-
-.course-content {
-    margin-left: 1em;
-    
 }
