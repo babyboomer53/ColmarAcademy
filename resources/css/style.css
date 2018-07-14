@@ -42,8 +42,7 @@ header div {
 }
 
 #logo {
-    background-color: red;
-
+    background-color: Red;
 }
 
 #logotype {
@@ -68,8 +67,6 @@ header nav a {
 
 #banner {
     margin-top: 6em;
-    "
-
 }
 
 #banner div {
@@ -160,7 +157,7 @@ header nav a {
 #courses {
     justify-content: center;
     flex-wrap: wrap;
-    background-color: Beige;
+    /*background-color: Beige;*/
 }
 
 #courses h2 {
@@ -273,9 +270,8 @@ header nav a {
 
 footer {
     font-family: "Ringbearer Medium";
-    background-color: beige;
+    background-color: Beige;
     justify-content: space-between;
-    
 }
 
 footer a {

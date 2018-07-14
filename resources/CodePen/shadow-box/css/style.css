@@ -1,0 +1,23 @@
+* {
+  border: 1px solid black;
+}
+.shadow {
+  height: 400px;
+  width: 250px;
+  box-shadow: inset 5px 5px 15px 5px rgba(0,0,0, 1.0);
+}
+
+img { 
+  height: auto;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+}
+/*
+div {
+  height: 400px;
+  width: 250px;
+  background: url(http://lorempixum.com/400/200/transport/2);
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,1);
+}
+*/
