@@ -338,19 +338,6 @@ footer div {
 
 }
 
-.countdown-timer {
-    font-family: 'LCD Standard', Georgia;
-    font-size: 1.25em;
-    color: beige;
-    word-spacing: 0.25em;
-    width: 33%;
-    text-align: center;
-    margin: 0 auto;
-    background: none;
-    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.625);
-    border-radius: 4px;
-}
-
 header,
 footer,
 section {
