@@ -22,7 +22,7 @@ body {
 
 .flex-container {
     display: flex;
-    width: 960px;
+    width: 1200px;
     margin: 0 auto;
     align-items: center;
 }
@@ -33,7 +33,7 @@ body {
     position: absolute;
     top: 0;
     background-color: Gray;
-    opacity: 0.70;
+    opacity: 0.0;
     z-index: 10;
 }
 
@@ -83,6 +83,15 @@ header nav a {
     width: 40%;
 }
 
+#banner button {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: beige;
+    background-color: dimgrey;
+    border-radius: 4px;
+}
+
 .horizontal-tile-large img {
     width: 60%;
     Margin-right: 2em;
@@ -111,7 +120,7 @@ header nav a {
     Font-weight: 700;
 }
 
-#bulletins {
+#announcements {
     justify-content: flex-start;
     padding-right: 0;
     color: gray;
@@ -147,12 +156,14 @@ header nav a {
     margin-top: 48px;
 }
 
-#tile-container {
+.tile-container {
     display: flex;
     flex-direction: column;
     width: 40%;
     margin-left: 1.5em;
 }
+
+.tile-container .horizontal-tile-small {}
 
 .horizontal-tile-small {
     padding: 1em;
@@ -318,13 +329,14 @@ footer a {
     font-family: 'LCD Standard', Georgia;
     font-size: 1.25em;
     color: beige;
-    background-color: black;
+
     word-spacing: 0.25em;
     width: 33%;
     text-align: center;
     margin: 0 auto;
     background: none;
     box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.625);
+    border-radius: 4px;
 }
 
 header,
