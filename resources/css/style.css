@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .flex-container {
     display: flex;
     width: 1200px;
@@ -65,14 +69,13 @@ header div {
 }
 
 header nav {
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 header nav a {
     font-family: inherit;
     color: beige;
     margin: 0 1em;
-    text-decoration: none;
 }
 
 #banner {
@@ -88,7 +91,7 @@ header nav a {
     padding: 0.5em;
     font-size: 1.5em;
     color: beige;
-    background-color: dimgrey;
+    background-color: Skyblue;
     border-radius: 25px;
 }
 
@@ -169,10 +172,13 @@ header nav a {
     padding: 1em;
 }
 
+.horizontal-tile-small div {}
+
 .horizontal-tile-small img {
     Width: 35%;
     Height: auto;
     float: left;
+    margin-right: 1em;
 }
 
 #courses {
@@ -314,22 +320,28 @@ footer {
     justify-content: space-between;
 }
 
+footer h2 {
+    margin-left: 1.5em;
+}
+
 footer a {
     color: inherit;
-    text-decoration: none;
-    margin-right: 1em;
+    margin: 0 0.5em;
+}
+
+footer div {
+    margin-right: 1.5em;
 }
 
 .copyright-notice span {
     font-family: Helvetica, Arial;
-    margin-left: 1em;
+
 }
 
 .countdown-timer {
     font-family: 'LCD Standard', Georgia;
     font-size: 1.25em;
     color: beige;
-
     word-spacing: 0.25em;
     width: 33%;
     text-align: center;
