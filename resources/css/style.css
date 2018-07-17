@@ -181,18 +181,18 @@ header nav a {
     margin-right: 1em;
 }
 
-#courses {
+#curriculum {
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#courses h2 {
+#curriculum h2 {
     width: 100%;
     text-align: center;
     font-size: 2.5em;
 }
 
-#courses .vertical-tile-small {
+#curriculum .vertical-tile-small {
     position: relative;
     width: 25%;
     font-family: Helvetica, Arial;
@@ -226,24 +226,24 @@ header nav a {
 }
 
 
-#courses .vertical-tile-small:nth-child(n + 1) {
+#curriculum .vertical-tile-small:nth-child(n + 1) {
     Margin-bottom: 32px;
 }
 
 
-#courses .vertical-tile-small p:nth-child(1) {
+#curriculum .vertical-tile-small p:nth-child(1) {
     font-size: 2em;
     Font-weight: 700;
     margin-top: 16px;
 }
 
-#courses .vertical-tile-small p:nth-child(2) {
+#curriculum .vertical-tile-small p:nth-child(2) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1em;
 }
 
-#courses .vertical-tile-small p:nth-child(3) {
+#curriculum .vertical-tile-small p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1em;
