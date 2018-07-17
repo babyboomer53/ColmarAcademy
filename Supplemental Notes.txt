@@ -14,3 +14,6 @@ I was fiddling around with the site when I inadvertently deleted the headers bac
 
 When I added the "thesis" section, I found that I had a duplicate ID named "tile-container." Up until that point, merging the separate sections of code had been relatively seamless and uneventful. I changed the identifier, tile-container, from an ID to a class and made the appropriate change in the CSS file.
 
+I don't know what the git/GitHub "stash" command does, but I won't be using it again anytime soon. I unzipped an archive in the git directory, only to find its contents disappear after I use the stash option.
+
+As of 14 July, I can no longer push my repository to GitHub. I've submitted a ticket to the folks at GitHub.

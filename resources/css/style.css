@@ -166,8 +166,6 @@ header nav a {
     margin-left: 1.5em;
 }
 
-.tile-container .horizontal-tile-small {}
-
 .horizontal-tile-small {
     padding: 1em;
 }
@@ -345,6 +343,56 @@ section {
     background-color: beige;
     border-radius: 10px;
     margin-bottom: 1em !Important;
+}
+
+#countdown-timer {
+    visibility: hidden;
+    Position: absolute;
+    Top: 500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: Black;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px black;
+}
+
+.headings {
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica, Arial;
+}
+
+.headings h2 {
+    width: 100px;
+    text-align: center;
+    font-family: 'lcd standard';
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'lcd standard';
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.data div {
+    text-shadow: 2px 2px 2px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    Color: black;
+    background-color: White;
+    box-shadow: inset 3px 3px 7px 2px;
+    border-radius: 4px;
 }
 
 footer,

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "LCD Standard";
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2015702/LcdStd.otf);
+}
+
+.countdown-timer {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-color: Skyblue;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  Box-shadow: 5px 5px 15px 5px black;
+}
+
+.headings {
+  display: flex;
+  justify-content: space-around;
+  font-family: Helvetica, Arial;
+}
+
+.headings h2 {
+  width: 100px;
+  text-align: center;
+}
+.data {
+  display: flex;
+  justify-content: space-around;
+  font-family: Georgia, Arial;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.data div {
+  font-family: "LCD standard";
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  Color: black;
+  background-color: White;
+  box-shadow: inset 3px 3px 7px 2px;
+  border-radius: 4px;
+}
