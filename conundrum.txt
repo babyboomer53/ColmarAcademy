@@ -1,0 +1,35 @@
+        <section id="general-info" class="flex-container">
+        
+            <h2 style="display: none;">General information</h2>
+            
+            <div class="vertical-tile-large">
+                <img src="./resources/images/information-main.jpg" alt="General information" />
+                <p>It doesn't hurt to keep practicing</p>
+                <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et."</p>
+                <p>Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+
+        </section>
+
+#general-info .vertical-tile-large p:nth-child(1) {
+    font-size: 2.25rem;
+    Font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+#general-info .vertical-tile-large p:nth-child(2) {
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+#general-info .vertical-tile-large p:nth-child(3) {
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1rem;
+    margin-top: 48px;
+    font-style: italic;
+}

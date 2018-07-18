@@ -14,11 +14,12 @@
 
     <div id="parent-container" style="position: relative;">
         <div id="video-container" style="z-index: -1; height: 100%; position: fixed; width: 100%">
-            <video preload autoplay muted style="width:100% ; height: auto; min-width:100%; min-height:100%; object-fit: cover; position:absolute; z-index: -1">
+            <video autoplay muted style="width:100% ; height: auto; min-width:100%; min-height:100%; object-fit: cover; position:absolute; z-index: -1">
                 <source id="mp4" src="./resources/videos/ColmarAcademy.mp4" type="video/mp4">
                 <p>Your user agent does not support the HTML 5 video element.</p>
             </video>
             <div id="diffuser"></div>
+            <div class="shadow"></div>
         </div>
     </div>
 
@@ -86,13 +87,13 @@
         </section>
 
         <section id="curriculum" class="flex-container">
-            <h2>Start learning</h2>
+            <h2 class="section-heading">Start learning</h2>
 
             <div class="vertical-tile-small">
                 <img src="./resources/images/course-software.jpg" alt="Software">
                 <div class="course-detail">
-                    <p>Software engineering</p>
-                    <p>COURSESt</p>
+                    <p>Software Engineering</p>
+                    <p>COURSES</p>
                     <p>Web development, Mobile Development, iOT, APIs</p>
                 </div>
                 <div class="shadow"></div>
@@ -101,7 +102,7 @@
             <div class="vertical-tile-small">
                 <img src="./resources/images/course-computer-art.jpg" alt="Computer art">
                 <div class="course-detail">
-                    <p>Computer art</p>
+                    <p>Computer Art</p>
                     <p>COURSES</p>
                     <p>Imaging &amp; design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
                 </div>
@@ -150,7 +151,7 @@
         </section>
 
         <section id="thesis" class="flex-container">
-            <h2> Thesis exhibit</h2>
+            <h2 class="section-heading"> Thesis exhibit</h2>
             <div class="video-container ">
                 <video autoplay loop muted style="width: 100%; height: 100%; ">
                     <source id="mp4-again" src="./resources/videos/thesis.mp4">
@@ -175,7 +176,7 @@
                         <p>Research study about New York</p>
                     </div>
                 </div>
-                <div class="horizontal-tile-small" style="visibility: hidden" >
+                <div class="horizontal-tile-small" style="visibility: hidden">
                     <!-- Placeholder -->
                     <img src="./resources/images/thesis-now-and-then.jpg " alt="Now and then" />
                     <div>
