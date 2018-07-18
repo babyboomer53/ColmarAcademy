@@ -3,6 +3,7 @@
 }
 
 html {
+    font-size: 16px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -41,63 +42,76 @@ a {
     z-index: 10;
 }
 
-header {
+#navbar {
     width: auto !important;
     justify-content: space-between;
     height: 80px;
-    background: linear-gradient(to Right, Red, rgba(0, 0, 0, 1));
+    background: linear-gradient(to Right, Red, Black);
     z-index: 10;
 }
 
-header div {
-    display: flex;
-    font-size: 12px;
-    font-family: "ringbearer medium";
-}
-
-#logo {
-    background-color: Red;
+#navbar img {
+    float: left;
 }
 
 #logotype {
+    font-size: 1.5rem;
+    font-family: "ringbearer medium";
     display: flex;
     align-items: center;
     height: 70px;
     color: Black;
     background-color: Beige;
     box-shadow: inset 2px 2px 8px 2px;
+    border-radius: 4px;
 }
 
-header nav {
-    margin-right: 0.5em;
+#navbar nav {
+    margin-right: 0.5rem;
 }
 
-header nav a {
+#navbar nav a {
     font-family: inherit;
     color: beige;
-    margin: 0 1em;
+    margin: 0 1rem;
 }
 
 #banner {
-    margin-top: 6em;
+    margin-top: 6rem;
 }
 
-#banner div {
+#banner-content {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
-#banner button {
-    width: 100%;
-    padding: 0.5em;
-    font-size: 1.5em;
-    color: beige;
-    background-color: Skyblue;
+#banner-content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#banner-content nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#banner #button {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: Black;
     border-radius: 25px;
+}
+
+#banner #button a {
+    color: beige;
 }
 
 .horizontal-tile-large img {
     width: 60%;
-    Margin-right: 2em;
+    Margin-right: 2rem;
     Float: left;
     padding: 32px 24px;
 }
@@ -105,21 +119,21 @@ header nav a {
 .horizontal-tile-large p:nth-child(1) {
     font-family: Helvetica, Arial;
     Color: gray;
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
 }
 
 .horizontal-tile-large p:nth-child(2) {
     font-family: Times, Arial;
     Color: gray;
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
 }
 
 .horizontal-tile-large p:nth-child(3) {
     font-family: Courier, Arial;
     Color: gray;
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
 }
 
@@ -141,7 +155,7 @@ header nav a {
 }
 
 .vertical-tile-large p:nth-child(1) {
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
     text-shadow: 2px 2px black;
 }
@@ -149,13 +163,13 @@ header nav a {
 .vertical-tile-large p:nth-child(2) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 48px;
 }
 
@@ -163,11 +177,11 @@ header nav a {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
 }
 
 .horizontal-tile-small {
-    padding: 1em;
+    padding: 1rem;
 }
 
 .horizontal-tile-small div {}
@@ -176,7 +190,7 @@ header nav a {
     Width: 35%;
     Height: auto;
     float: left;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 #curriculum {
@@ -187,7 +201,7 @@ header nav a {
 #curriculum h2 {
     width: 100%;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 #curriculum .vertical-tile-small {
@@ -209,8 +223,8 @@ header nav a {
 
 .course-detail {
     height: 225px;
-    margin-left: 1em;
-    margin-bottom: 2em;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 
 .shadow {
@@ -230,7 +244,7 @@ header nav a {
 
 
 #curriculum .vertical-tile-small p:nth-child(1) {
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
     margin-top: 16px;
 }
@@ -238,13 +252,13 @@ header nav a {
 #curriculum .vertical-tile-small p:nth-child(2) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #curriculum .vertical-tile-small p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 48px;
 }
 
@@ -257,18 +271,18 @@ header nav a {
 }
 
 #thesis h2:first-child {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
     width: 100%;
 }
 
 .video-container {
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
     width: 54%;
     font-family: Helvetica, Arial;
     color: Gray;
     Background-color: Beige;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .video-container video {
@@ -277,20 +291,20 @@ header nav a {
 }
 
 .video-container p:nth-child(2) {
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
 }
 
 .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 48px;
 }
 
@@ -299,11 +313,11 @@ header nav a {
     overflow: hidden;
     flex-direction: column;
     width: 40%;
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
 }
 
 .horizontal-tile-small {
-    padding: 1em;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -320,16 +334,16 @@ footer {
 }
 
 footer h2 {
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
 }
 
 footer a {
     color: inherit;
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
 }
 
 footer div {
-    margin-right: 1.5em;
+    margin-right: 1.5rem;
 }
 
 .copyright-notice span {
@@ -342,7 +356,7 @@ footer,
 section {
     background-color: beige;
     border-radius: 10px;
-    margin-bottom: 1em !Important;
+    margin-bottom: 1rem !Important;
 }
 
 #countdown-timer {
@@ -380,7 +394,7 @@ section {
     justify-content: space-around;
     font-family: 'lcd standard';
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .data div {
