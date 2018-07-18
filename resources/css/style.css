@@ -3,6 +3,7 @@
 }
 
 html {
+    font-size: 16px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -37,67 +38,88 @@ a {
     position: absolute;
     top: 0;
     background-color: Gray;
-    opacity: 0.0;
+    opacity: 0.5;
     z-index: 10;
 }
 
-header {
+#navbar {
     width: auto !important;
     justify-content: space-between;
-    height: 80px;
-    background: linear-gradient(to Right, Red, rgba(0, 0, 0, 1));
+    height: 90px;
+    background: linear-gradient(to Right, Red, Black);
     z-index: 10;
 }
 
-header div {
-    display: flex;
-    font-size: 12px;
-    font-family: "ringbearer medium";
+#navbar img {
+    float: left;
 }
 
 #logo {
-    background-color: Red;
+    display: flex;
+    align-items: center;
 }
 
 #logotype {
+    width: auto;
+    font-size: 1.75rem;
+    font-family: "ringbearer medium";
+    font-weight: 700;
     display: flex;
     align-items: center;
     height: 70px;
     color: Black;
     background-color: Beige;
     box-shadow: inset 2px 2px 8px 2px;
+    border-radius: 4px;
 }
 
-header nav {
-    margin-right: 0.5em;
+#navbar nav {
+    margin-right: 0.5rem;
 }
 
-header nav a {
+#navbar nav a {
     font-family: inherit;
     color: beige;
-    margin: 0 1em;
+    margin: 0 1rem;
 }
 
 #banner {
-    margin-top: 6em;
+    margin-top: 6rem;
 }
 
-#banner div {
+#banner-content {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
-#banner button {
-    width: 100%;
-    padding: 0.5em;
-    font-size: 1.5em;
-    color: beige;
-    background-color: Skyblue;
+#banner-content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#banner-content nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#banner #button {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: Crimson;
     border-radius: 25px;
+}
+
+#banner #button a {
+    color: beige;
+    padding: 8px;
 }
 
 .horizontal-tile-large img {
     width: 60%;
-    Margin-right: 2em;
+    Margin-right: 2rem;
     Float: left;
     padding: 32px 24px;
 }
@@ -105,89 +127,115 @@ header nav a {
 .horizontal-tile-large p:nth-child(1) {
     font-family: Helvetica, Arial;
     Color: gray;
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
 }
 
 .horizontal-tile-large p:nth-child(2) {
     font-family: Times, Arial;
     Color: gray;
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
 }
 
 .horizontal-tile-large p:nth-child(3) {
     font-family: Courier, Arial;
     Color: gray;
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
 }
 
-#announcements {
+#general-info {
     justify-content: flex-start;
     padding-right: 0;
     color: gray;
     background-color: Beige;
 }
 
-.vertical-tile-large {
+#general-info .vertical-tile-large {
     width: 60%;
     padding: 32px 24px;
 }
 
-.vertical-tile-large img {
+#general-info .vertical-tile-large img {
     width: 100%;
     height: auto;
 }
 
-.vertical-tile-large p:nth-child(1) {
-    font-size: 2em;
+#general-info .vertical-tile-large p:nth-child(2) {
+    font-size: 2.25rem;
     Font-weight: 700;
-    text-shadow: 2px 2px black;
+    margin-top: 32px;
+    margin-bottom: 24px;
 }
 
-.vertical-tile-large p:nth-child(2) {
+#general-info .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
 }
 
-.vertical-tile-large p:nth-child(3) {
+#general-info .vertical-tile-large p:nth-child(4) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 48px;
+    font-style: italic;
 }
 
-.tile-container {
+#general-info .small-tile-container {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
 }
 
 .horizontal-tile-small {
-    padding: 1em;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
 }
-
-.horizontal-tile-small div {}
 
 .horizontal-tile-small img {
     Width: 35%;
     Height: auto;
     float: left;
-    margin-right: 1em;
+    margin-right: 1rem;
+}
+
+.horizontal-tile-small a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: deepskyblue;
+}
+
+.horizontal-tile-small a,
+.horizontal-tile-small p,
+.horizontal-tile-small h2 {
+    margin: 8px 0;
+}
+
+.horizontal-tile-small h2:nth-child(1) {
+    font-size: 2rem;
+}
+
+.horizontal-tile-small h2:nth-child(2) {
+    font-size: 1rem;
+}
+
+.section-heading {
+    color: Gray;
+    margin: 32px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 #curriculum {
     justify-content: center;
     flex-wrap: wrap;
-}
-
-#curriculum h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 2.5em;
 }
 
 #curriculum .vertical-tile-small {
@@ -208,9 +256,9 @@ header nav a {
 }
 
 .course-detail {
-    height: 225px;
-    margin-left: 1em;
-    margin-bottom: 2em;
+    height: 175px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 
 .shadow {
@@ -223,14 +271,13 @@ header nav a {
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
 }
 
-
-#curriculum .vertical-tile-small:nth-child(n + 1) {
+#curriculum .vertical-tile-small {
+    color: silver;
     Margin-bottom: 32px;
 }
 
-
 #curriculum .vertical-tile-small p:nth-child(1) {
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
     margin-top: 16px;
 }
@@ -238,14 +285,31 @@ header nav a {
 #curriculum .vertical-tile-small p:nth-child(2) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
+    margin-top: 16px;
 }
 
 #curriculum .vertical-tile-small p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
-    margin-top: 48px;
+    font-size: 1rem;
+    margin-top: 32px;
+}
+
+#curriculum .vertical-tile-small:nth-child(Even) {
+    background-color: black;
+}
+
+#curriculum .vertical-tile-small:nth-child(Odd) {
+    background-color: Red;
+}
+
+/*
+I thought I knew a little something about pseudo-classes, but I have no idea how or why the following works!
+*/
+
+#curriculum .vertical-tile-small:nth-child(n+3):nth-child(-n+4) .course-detail p:nth-child(2) {
+    margin-top: 48px ! Important;
 }
 
 #thesis {
@@ -256,19 +320,21 @@ header nav a {
     background-color: Beige;
 }
 
+/*
 #thesis h2:first-child {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
     width: 100%;
 }
+*/
 
 .video-container {
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
     width: 54%;
     font-family: Helvetica, Arial;
     color: Gray;
     Background-color: Beige;
-    margin-bottom: 1em;
+
 }
 
 .video-container video {
@@ -277,20 +343,23 @@ header nav a {
 }
 
 .video-container p:nth-child(2) {
-    font-size: 2em;
+    font-size: 2rem;
     Font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
+    margin-bottom: 32px;
 }
 
 .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 48px;
 }
 
@@ -299,11 +368,11 @@ header nav a {
     overflow: hidden;
     flex-direction: column;
     width: 40%;
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
 }
 
 .horizontal-tile-small {
-    padding: 1em;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -320,16 +389,16 @@ footer {
 }
 
 footer h2 {
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
 }
 
 footer a {
     color: inherit;
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
 }
 
 footer div {
-    margin-right: 1.5em;
+    margin-right: 1.5rem;
 }
 
 .copyright-notice span {
@@ -342,7 +411,7 @@ footer,
 section {
     background-color: beige;
     border-radius: 10px;
-    margin-bottom: 1em !Important;
+    margin-bottom: 1rem !Important;
 }
 
 #countdown-timer {
@@ -380,7 +449,7 @@ section {
     justify-content: space-around;
     font-family: 'lcd standard';
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .data div {
