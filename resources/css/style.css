@@ -45,13 +45,18 @@ a {
 #navbar {
     width: auto !important;
     justify-content: space-between;
-    height: 80px;
+    height: 90px;
     background: linear-gradient(to Right, Red, Black);
     z-index: 10;
 }
 
 #navbar img {
     float: left;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
 }
 
 #logotype {
@@ -101,7 +106,7 @@ a {
     justify-content: center;
     padding: 0.5rem;
     font-size: 1.5rem;
-    background-color: Black;
+    background-color: Crimson;
     border-radius: 25px;
 }
 
@@ -137,7 +142,7 @@ a {
     Font-weight: 700;
 }
 
-#announcements {
+#general-info {
     justify-content: flex-start;
     padding-right: 0;
     color: gray;
@@ -154,26 +159,25 @@ a {
     height: auto;
 }
 
-.vertical-tile-large p:nth-child(1) {
-    font-size: 2rem;
-    Font-weight: 700;
-    text-shadow: 2px 2px black;
-}
-
 .vertical-tile-large p:nth-child(2) {
-    font-family: Helvetica, Arial;
-    Color: Inherit;
-    font-size: 1rem;
+    font-size: 2.25rem;
+    Font-weight: 700;
 }
 
 .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1rem;
+}
+
+.vertical-tile-large p:nth-child(4) {
+    font-family: Helvetica, Arial;
+    Color: Inherit;
+    font-size: 1rem;
     margin-top: 48px;
 }
 
-.tile-container {
+.small-tile-container {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -181,16 +185,30 @@ a {
 }
 
 .horizontal-tile-small {
+    display: flex;
+    align-items: center;
     padding: 1rem;
 }
-
-.horizontal-tile-small div {}
 
 .horizontal-tile-small img {
     Width: 35%;
     Height: auto;
     float: left;
     margin-right: 1rem;
+}
+
+.horizontal-tile-small a,
+.horizontal-tile-small p,
+.horizontal-tile-small h2 {
+    margin: 8px 0;
+}
+
+.horizontal-tile-small h2:nth-child(1) {
+    font-size: 2rem;
+}
+
+.horizontal-tile-small h2:nth-child(2) {
+    font-size: 1rem;
 }
 
 #curriculum {
@@ -236,7 +254,6 @@ a {
     border-radius: 6px;
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
 }
-
 
 #curriculum .vertical-tile-small:nth-child(n + 1) {
     Margin-bottom: 32px;
