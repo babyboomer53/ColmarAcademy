@@ -94,8 +94,7 @@ a {
 }
 
 #banner-content p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 #banner-content nav {
@@ -106,12 +105,12 @@ a {
 #banner #button {
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: 1.5rem;
     background-color: Crimson;
     border-radius: 25px;
-    
-
+    margin: 0;
+    color: beige;
 }
 
 #banner #button a {
@@ -382,6 +381,7 @@ I thought I knew a little something about pseudo-classes, but I have no idea how
     width: 40%;
     margin-left: 1.5rem;
 }
+
 /*
 #thesis .tile-container .horizontal-tile-small {
     padding: 1rem;
@@ -404,6 +404,7 @@ I thought I knew a little something about pseudo-classes, but I have no idea how
     font-size: 1.25rem;
 }
 */
+
 footer {
     font-family: "Ringbearer Medium";
     background-color: Beige;
