@@ -313,6 +313,7 @@ I thought I knew a little something about pseudo-classes, but I have no idea how
 }
 
 #thesis {
+
     flex-wrap: wrap;
     /* this was the fix! */
     padding-top: 0;
