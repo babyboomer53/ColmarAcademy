@@ -47,7 +47,6 @@ a {
     justify-content: space-between;
     height: 90px;
     background: linear-gradient(to Right, Red, Black);
-    box-shadow: 5px 5px 15px 5px black;
     z-index: 10;
 }
 
@@ -111,6 +110,8 @@ a {
     font-size: 1.5rem;
     background-color: Crimson;
     border-radius: 25px;
+    
+
 }
 
 #banner #button a {
@@ -277,6 +278,11 @@ a {
     Margin-bottom: 32px;
 }
 
+#curriculum .vertical-tile-small:nth-child(n+2):hover {
+    color: black;
+    background-color: white;
+}
+
 #curriculum .vertical-tile-small p:nth-child(1) {
     font-size: 2rem;
     Font-weight: 700;
@@ -330,9 +336,9 @@ I thought I knew a little something about pseudo-classes, but I have no idea how
     /* this was the fix! */
     padding-top: 0;
     justify-content: Space-between;
+    color: Gray;
     background-color: Beige;
 }
-
 
 .video-container {
     float: left;
@@ -376,7 +382,7 @@ I thought I knew a little something about pseudo-classes, but I have no idea how
     width: 40%;
     margin-left: 1.5rem;
 }
-
+/*
 #thesis .tile-container .horizontal-tile-small {
     padding: 1rem;
     width: 100%;
@@ -397,7 +403,7 @@ I thought I knew a little something about pseudo-classes, but I have no idea how
     font-family: Times, serif;
     font-size: 1.25rem;
 }
-
+*/
 footer {
     font-family: "Ringbearer Medium";
     background-color: Beige;
@@ -433,12 +439,10 @@ section {
 #countdown-timer {
     visibility: hidden;
     Position: absolute;
-    Top: 700px;
-    left: 0;
-    right: 0;
+    Top: 25%;
     display: flex;
     width: 500px;
-    margin: 0 auto;
+    Left: 33%;
     flex-direction: column;
     justify-content: space-between;
     color: white;
@@ -446,21 +450,26 @@ section {
     padding-bottom: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 5px black;
+    opacity: 0.8;
 }
 
-.headings {
+#countdown-timer .headings {
     display: flex;
     justify-content: space-around;
     font-family: Helvetica, Arial;
 }
 
-.headings h2 {
+#countdown-timer h1 {
+    padding: 10px;
+}
+
+#countdown-timer .headings h2 {
     width: 100px;
     text-align: center;
     font-family: 'lcd standard';
 }
 
-.data {
+#countdown-timer .data {
     display: flex;
     justify-content: space-around;
     font-family: 'lcd standard';
@@ -468,7 +477,7 @@ section {
     font-size: 2rem;
 }
 
-.data div {
+#countdown-timer .data div {
     text-shadow: 2px 2px 2px;
     text-align: center;
     width: 100px;
