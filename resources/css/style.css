@@ -239,13 +239,17 @@ a {
     flex-wrap: wrap;
 }
 
+#curriculum a {
+    margin: 0 16px;
+    border-radius: 16px;
+}
+
 #curriculum .vertical-tile-small {
     position: relative;
-    width: 25%;
+    width: 100%;
     font-family: Helvetica, Arial;
     color: Gray;
     Background-color: White;
-    margin: 0 16px;
     border-radius: 6px;
 }
 
@@ -257,7 +261,7 @@ a {
 }
 
 .course-detail {
-    height: 175px;
+    /*height: 175px;*/
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
@@ -274,10 +278,11 @@ a {
 
 #curriculum .vertical-tile-small {
     color: silver;
-    Margin-bottom: 32px;
+    background-color: black;
+    /*Margin-bottom: 32px;*/
 }
 
-#curriculum .vertical-tile-small:nth-child(n+2):hover {
+#curriculum .vertical-tile-small:nth-child(n+1):hover {
     color: black;
     background-color: white;
 }
@@ -290,46 +295,19 @@ a {
 
 #curriculum .vertical-tile-small p:nth-child(2) {
     font-family: Helvetica, Arial;
-    Color: Inherit;
+    color: Inherit;
     font-size: 1rem;
     margin-top: 16px;
 }
 
 #curriculum .vertical-tile-small p:nth-child(3) {
     font-family: Helvetica, Arial;
-    Color: Inherit;
+    color: Inherit;
     font-size: 1rem;
     margin-top: 32px;
 }
 
-#curriculum .vertical-tile-small:nth-child(Even) {
-    background-color: black;
-}
-
-#curriculum .vertical-tile-small:nth-child(Odd) {
-    background-color: Red;
-}
-
-#curriculum .vertical-tile-small:nth-child(2) {
-    color: Black;
-    background-color: Silver;
-}
-
-#curriculum .vertical-tile-small:nth-child(3) {
-    color: White;
-    background-color: Red;
-}
-
-
-/*
-I thought I knew a little something about pseudo-classes, but I have no idea how or why the following works!
-*/
-
-#curriculum .vertical-tile-small:nth-child(n+3):nth-child(-n+4) .course-detail p:nth-child(2) {
-    margin-top: 48px ! Important;
-}
-
-#thesis {
+thesis {
     Display: block;
     /*flex-wrap: wrap;*/
     /* this was the fix! */
