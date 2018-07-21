@@ -251,7 +251,7 @@ a {
     color: Gray;
     Background-color: White;
     border-radius: 6px;
-    transition-delay: 250ms;
+    transition-delay: 100ms;
     transition-duration: 500ms;
     transition-property: all;
     transition-timing-function: ease-in;
