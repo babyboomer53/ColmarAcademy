@@ -108,7 +108,7 @@ a {
     padding: 1rem;
     font-size: 1.5rem;
     background-color: Crimson;
-    border-radius: 25px;
+    border-radius: 5px;
     margin: 0;
     color: beige;
 }
@@ -280,13 +280,7 @@ a {
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.70);
 }
 
-#curriculum .vertical-tile-small {
-    color: silver;
-    background-color: black;
-    /*Margin-bottom: 32px;*/
-}
-
-#curriculum .vertical-tile-small:nth-child(n+1):hover {
+#curriculum .vertical-tile-small:nth-child(n):hover {
     color: black;
     background-color: white;
 }
@@ -310,8 +304,24 @@ a {
     font-size: 1rem;
     margin-top: 32px;
 }
+/*
+#curriculum .vertical-tile-small:nth-child(Even) {
+    color: white;
+    background-color: red;
+    /*background: linear-gradient(to Bottom, LightGreen, Black);*/
+}
 
-thesis {
+#curriculum .vertical-tile-small:nth-child(Odd) {
+    color: white;
+    background-color: black;
+    /*background: linear-gradient(to Bottom, Red, Black);*/
+}
+*/
+#curriculum .vertical-tile-small:nth-child(n+3) .course-detail p:nth-child(2) {
+    margin-top: 48px !Important;
+}
+
+#thesis {
     Display: block;
     /*flex-wrap: wrap;*/
     /* this was the fix! */
@@ -422,7 +432,7 @@ section {
 #countdown-timer {
     visibility: hidden;
     Position: absolute;
-    Top: 25%;
+    Top: 20%;
     display: flex;
     width: 500px;
     Left: 33%;
