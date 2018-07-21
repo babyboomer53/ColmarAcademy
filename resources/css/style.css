@@ -240,6 +240,7 @@ a {
 }
 
 #curriculum a {
+    width: 25%;
     margin: 0 16px;
     border-radius: 16px;
 }
@@ -252,7 +253,7 @@ a {
     Background-color: White;
     border-radius: 6px;
     transition-delay: 100ms;
-    transition-duration: 500ms;
+    transition-duration: 250ms;
     transition-property: all;
     transition-timing-function: ease-in;
 }
@@ -281,6 +282,7 @@ a {
 }
 
 #curriculum .vertical-tile-small:nth-child(n):hover {
+    background: none;
     color: black;
     background-color: white;
 }
@@ -304,21 +306,23 @@ a {
     font-size: 1rem;
     margin-top: 32px;
 }
-/*
-#curriculum .vertical-tile-small:nth-child(Even) {
+
+#curriculum a:nth-child(Odd) div:nth-child(1) {
+    /*
+    color: Black;
+    background-color: Silver;
+    */
     color: white;
-    background-color: red;
-    /*background: linear-gradient(to Bottom, LightGreen, Black);*/
+    background: linear-gradient(to bottom, red, red, black);
 }
 
-#curriculum .vertical-tile-small:nth-child(Odd) {
-    color: white;
-    background-color: black;
-    /*background: linear-gradient(to Bottom, Red, Black);*/
+#curriculum a:nth-child(Even) div:nth-child(1) {
+    color: Black;
+    background-color: Silver;
 }
-*/
-#curriculum .vertical-tile-small:nth-child(n+3) .course-detail p:nth-child(2) {
-    margin-top: 48px !Important;
+
+#curriculum a:nth-child(n+3) div:nth-child(1) .course-detail p:nth-child(2) {
+    margin-top: 48px;
 }
 
 #thesis {
@@ -374,30 +378,7 @@ a {
     margin-left: 1.5rem;
 }
 
-/*
-#thesis .tile-container .horizontal-tile-small {
-    padding: 1rem;
-    width: 100%;
-}
-
-#thesis .tile-container .horizontal-tile-small img {
-    Width: 35%;
-    Height: auto;
-    float: left;
-}
-
-#thesis .tile-container .horizontal-tile-small p:nth-of-type(1) {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-#thesis .tile-container .horizontal-tile-small p:nth-of-type(2) {
-    font-family: Times, serif;
-    font-size: 1.25rem;
-}
-*/
-
-footer {
+ooter {
     font-family: "Ringbearer Medium";
     background-color: Beige;
     justify-content: space-between;
