@@ -251,6 +251,10 @@ a {
     color: Gray;
     Background-color: White;
     border-radius: 6px;
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: ease-in;
 }
 
 .vertical-tile-small img {
@@ -261,7 +265,7 @@ a {
 }
 
 .course-detail {
-    /*height: 175px;*/
+    height: 185px;
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
