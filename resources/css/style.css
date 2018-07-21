@@ -19,8 +19,6 @@ html {
 
 body {
     margin: 0;
-    height: 100%;
-
 }
 
 a {
@@ -40,7 +38,7 @@ a {
     position: absolute;
     top: 0;
     background-color: Gray;
-    opacity: 0;
+    opacity: 0.5;
     z-index: 10;
 }
 
@@ -241,15 +239,19 @@ a {
     flex-wrap: wrap;
 }
 
+#curriculum a {
+    margin: 0 16px;
+    border-radius: 16px;
+}
+
 #curriculum .vertical-tile-small {
     position: relative;
-    width: 25%;
+    width: 100%;
     font-family: Helvetica, Arial;
-    /*Background-color: White;*/
-    margin: 0 16px;
+    color: Gray;
+    Background-color: White;
     border-radius: 6px;
-    Margin-bottom: 32px;
-    transition-delay: 250ms;
+    transition-delay: 100ms;
     transition-duration: 500ms;
     transition-property: all;
     transition-timing-function: ease-in;
@@ -263,7 +265,7 @@ a {
 }
 
 .course-detail {
-    height: 175px;
+    height: 185px;
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
@@ -280,9 +282,7 @@ a {
 
 #curriculum .vertical-tile-small:nth-child(n):hover {
     color: black;
-    background: none;
-    background-color: White !Important;
-    cursor: pointer;
+    background-color: white;
 }
 
 #curriculum .vertical-tile-small p:nth-child(1) {
@@ -293,18 +293,18 @@ a {
 
 #curriculum .vertical-tile-small p:nth-child(2) {
     font-family: Helvetica, Arial;
-    Color: Inherit;
+    color: Inherit;
     font-size: 1rem;
     margin-top: 16px;
 }
 
 #curriculum .vertical-tile-small p:nth-child(3) {
     font-family: Helvetica, Arial;
-    Color: Inherit;
+    color: Inherit;
     font-size: 1rem;
     margin-top: 32px;
 }
-
+/*
 #curriculum .vertical-tile-small:nth-child(Even) {
     color: white;
     background-color: red;
@@ -316,7 +316,7 @@ a {
     background-color: black;
     /*background: linear-gradient(to Bottom, Red, Black);*/
 }
-
+*/
 #curriculum .vertical-tile-small:nth-child(n+3) .course-detail p:nth-child(2) {
     margin-top: 48px !Important;
 }
