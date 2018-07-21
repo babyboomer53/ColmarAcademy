@@ -19,6 +19,8 @@ html {
 
 body {
     margin: 0;
+    height: 100%;
+
 }
 
 a {
@@ -38,7 +40,7 @@ a {
     position: absolute;
     top: 0;
     background-color: Gray;
-    opacity: 0.5;
+    opacity: 0;
     z-index: 10;
 }
 
@@ -108,7 +110,7 @@ a {
     padding: 1rem;
     font-size: 1.5rem;
     background-color: Crimson;
-    border-radius: 25px;
+    border-radius: 5px;
     margin: 0;
     color: beige;
 }
@@ -243,10 +245,14 @@ a {
     position: relative;
     width: 25%;
     font-family: Helvetica, Arial;
-    color: Gray;
-    Background-color: White;
+    /*Background-color: White;*/
     margin: 0 16px;
     border-radius: 6px;
+    Margin-bottom: 32px;
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: ease-in;
 }
 
 .vertical-tile-small img {
@@ -272,14 +278,11 @@ a {
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.70);
 }
 
-#curriculum .vertical-tile-small {
-    color: silver;
-    Margin-bottom: 32px;
-}
-
-#curriculum .vertical-tile-small:nth-child(n+2):hover {
+#curriculum .vertical-tile-small:nth-child(n):hover {
     color: black;
-    background-color: white;
+    background: none;
+    background-color: White !Important;
+    cursor: pointer;
 }
 
 #curriculum .vertical-tile-small p:nth-child(1) {
@@ -303,30 +306,19 @@ a {
 }
 
 #curriculum .vertical-tile-small:nth-child(Even) {
-    background-color: black;
+    color: white;
+    background-color: red;
+    /*background: linear-gradient(to Bottom, LightGreen, Black);*/
 }
 
 #curriculum .vertical-tile-small:nth-child(Odd) {
-    background-color: Red;
+    color: white;
+    background-color: black;
+    /*background: linear-gradient(to Bottom, Red, Black);*/
 }
 
-#curriculum .vertical-tile-small:nth-child(2) {
-    color: Black;
-    background-color: Silver;
-}
-
-#curriculum .vertical-tile-small:nth-child(3) {
-    color: White;
-    background-color: Red;
-}
-
-
-/*
-I thought I knew a little something about pseudo-classes, but I have no idea how or why the following works!
-*/
-
-#curriculum .vertical-tile-small:nth-child(n+3):nth-child(-n+4) .course-detail p:nth-child(2) {
-    margin-top: 48px ! Important;
+#curriculum .vertical-tile-small:nth-child(n+3) .course-detail p:nth-child(2) {
+    margin-top: 48px !Important;
 }
 
 #thesis {
@@ -440,7 +432,7 @@ section {
 #countdown-timer {
     visibility: hidden;
     Position: absolute;
-    Top: 25%;
+    Top: 20%;
     display: flex;
     width: 500px;
     Left: 33%;
