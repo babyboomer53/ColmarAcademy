@@ -102,7 +102,7 @@ a {
     margin-bottom: 1rem;
 }
 
-#banner #button {
+#banner #start-button {
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -111,9 +111,10 @@ a {
     border-radius: 5px;
     margin: 0;
     color: beige;
+    width: 100%;
 }
 
-#banner #button a {
+#banner #start-button a {
     color: beige;
     padding: 8px;
 }
@@ -313,7 +314,7 @@ a {
     background-color: Silver;
     */
     color: white;
-    background: linear-gradient(to bottom, red, red, black);
+    background: linear-gradient(to bottom, Red, Red, black);
 }
 
 #curriculum a:nth-child(Even) div:nth-child(1) {
