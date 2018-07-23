@@ -25,6 +25,24 @@ a {
     text-decoration: none;
 }
 
+.parent-container {
+    position: relative;
+}
+
+#content-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.countdown-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .flex-container {
     display: flex;
     width: 1200px;
@@ -48,6 +66,7 @@ a {
     height: 90px;
     background: linear-gradient(to Right, Red, Black);
     z-index: 10;
+    border-radius: 6px;
 }
 
 #navbar img {
@@ -379,7 +398,7 @@ a {
     margin-left: 1.5rem;
 }
 
-ooter {
+footer {
     font-family: "Ringbearer Medium";
     background-color: Beige;
     justify-content: space-between;
@@ -400,10 +419,8 @@ footer div {
 
 .copyright-notice span {
     font-family: Helvetica, Arial;
-
 }
 
-header,
 footer,
 section {
     background-color: beige;
@@ -412,26 +429,43 @@ section {
 }
 
 #countdown-timer {
-    visibility: hidden;
-    Position: absolute;
-    Top: 20%;
+    /*visibility: hidden;*/
     display: flex;
+    position: relative;
     width: 500px;
-    Left: 33%;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
-    background-color: Black;
+    color: Black;
+    background-color: Yellow;
+    font-weight: 600;
     padding-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 5px 5px 15px 5px black;
-    opacity: 0.8;
+    opacity: 0.75;
+    padding: 2px;
+    transition: opacity 5000ms;
+}
+
+#countdown-timer #close-button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 4px;
+    right: 4px;
+    color: Yellow;
+    Background-color: Black;
+    border-radius: 5px;
+}
+
+#countdown-timer #close-button:hover {
+    cursor: pointer;
 }
 
 #countdown-timer .headings {
     display: flex;
     justify-content: space-around;
-    font-family: Helvetica, Arial;
+    /*font-family: Helvetica, Arial;*/
 }
 
 #countdown-timer h1 {
@@ -462,6 +496,10 @@ section {
     background-color: White;
     box-shadow: inset 3px 3px 7px 2px;
     border-radius: 4px;
+}
+
+#countdown-timer.close {
+    opacity: 0;
 }
 
 footer {
