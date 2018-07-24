@@ -242,10 +242,12 @@
             document.getElementById(id).style.display = "block";
             document.getElementById(id).style.transition = "none";
             document.getElementById(id).style.opacity = "1";
+            document.getElementById(id).style.zindex = "5";
         }
 
         function hide(id) {
-            document.getElementById(id).style.visibility = "none";
+            document.getElementById(id).style.display = "none";
+            
         }
 
     </script>

@@ -17,6 +17,11 @@ html {
     src: url(../../resources/fonts/RINGM.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "Graduate Regular";
+    src: url(../../resources/fonts/Graduate-Regular.ttf) format("truetype");
+}
+
 body {
     margin: 0;
 }
@@ -103,7 +108,7 @@ a {
 }
 
 #banner {
-    margin-top: 6.5rem;
+    margin-top: 6.625rem;
 }
 
 #banner-content {
@@ -126,8 +131,7 @@ a {
     justify-content: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background: linear-gradient(to right, Crimson, Black, Crimson);
-
+    background: linear-gradient(to right, rgb(19, 197, 19), Black, rgb(19, 197, 19));
     border-radius: 5px;
     margin: 0;
     color: beige;
@@ -140,6 +144,10 @@ a {
     padding: 8px;
 }
 
+#banner #start-button:hover {
+    cursor: pointer;
+}
+
 .horizontal-tile-large img {
     width: 60%;
     Margin-right: 2rem;
@@ -148,7 +156,7 @@ a {
 }
 
 .horizontal-tile-large p:nth-child(1) {
-    font-family: Helvetica, Arial;
+    font-family: 'Graduate Regular', Helvetica, Arial;
     Color: gray;
     font-size: 2rem;
     Font-weight: 700;
@@ -190,12 +198,13 @@ a {
     Font-weight: 700;
     margin-top: 32px;
     margin-bottom: 24px;
+    font-family: 'Graduate Regular', Helvetica, Arial;
 }
 
 #general-info .vertical-tile-large p:nth-child(3) {
-    font-family: Helvetica, Arial;
+    font-family: Times, script;
     Color: Inherit;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-top: 24px;
     margin-bottom: 32px;
 }
@@ -219,8 +228,17 @@ a {
     display: flex;
     align-items: center;
     padding: 1rem;
+    /*border: 1px solid black;*/
+}
+/*
+.horizontal-tile-small:nth-child(Odd) {
+    background: linear-gradient(To right, Crimson, Pink);
 }
 
+.horizontal-tile-small:nth-child(Even) {
+    background: linear-gradient(To Right, Green, Lightgreen);
+}
+*/
 .horizontal-tile-small img {
     Width: 35%;
     Height: auto;
@@ -253,6 +271,7 @@ a {
     Padding: 32px;
     width: 100%;
     text-align: center;
+    font-family: 'Graduate Regular', Helvetica, Arial;
     font-size: 2.5rem;
 }
 
@@ -264,6 +283,7 @@ a {
 #curriculum a {
     width: 25%;
     margin: 0 16px;
+    margin-bottom: 2rem;
     border-radius: 16px;
 }
 
@@ -282,6 +302,11 @@ a {
     */
 }
 
+#curriculum a div:nth-child(1):hover {
+    color: black!Important;
+    background: linear-gradient(to right, White, White)!Important;
+}
+
 .vertical-tile-small img {
     width: 100%;
     height: auto;
@@ -292,7 +317,7 @@ a {
 .vertical-tile-small .course-detail {
     height: 185px;
     margin-left: 1rem;
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
 }
 
 .vertical-tile-small .shadow {
@@ -303,11 +328,6 @@ a {
     height: 100%;
     border-radius: 6px;
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.70);
-}
-
-.vertical-title-small div:hover {
-    color: black;
-    background-color: white;
 }
 
 #curriculum .vertical-tile-small p:nth-child(1) {
@@ -376,6 +396,11 @@ a {
     margin-bottom: 8px;
 }
 
+.video-container p:nth-child(3) {
+    font-family: Times, Helvetica;
+    font-size: 1.25rem;
+}
+
 #thesis .vertical-tile-large p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
@@ -437,7 +462,8 @@ section {
     flex-direction: column;
     justify-content: space-between;
     color: Black;
-    background-color: Yellow;
+    /*background-color: Yellow;*/
+    background: linear-gradient(to bottom, Beige,rgb(151, 117, 117));
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 8px;
@@ -456,7 +482,8 @@ section {
     color: White;
     Background-color: Black;
     border-radius: 5px;
-    font-weight: 600;
+    text-align: center;
+    font-weight: 700;
 }
 
 #countdown-timer .headings {
@@ -466,6 +493,7 @@ section {
 }
 
 #countdown-timer h1 {
+    font-size: 1.25rem;
     padding: 10px;
 }
 
