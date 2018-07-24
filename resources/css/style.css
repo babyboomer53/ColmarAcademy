@@ -64,7 +64,7 @@ a {
     width: auto !important;
     justify-content: space-between;
     height: 90px;
-    background: linear-gradient(to Right, Red, Black);
+    background: linear-gradient(to Right, Crimson, Black);
     z-index: 10;
     border-radius: 6px;
 }
@@ -126,11 +126,13 @@ a {
     justify-content: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: Crimson;
+    background: linear-gradient(to right, Crimson, Black, Crimson);
+
     border-radius: 5px;
     margin: 0;
     color: beige;
     width: 100%;
+    border-color: beige;
 }
 
 #banner #start-button a {
@@ -272,10 +274,12 @@ a {
     color: Gray;
     Background-color: White;
     border-radius: 6px;
+    /*
     transition-delay: 100ms;
     transition-duration: 250ms;
     transition-property: all;
     transition-timing-function: ease-in;
+    */
 }
 
 .vertical-tile-small img {
@@ -285,13 +289,13 @@ a {
     border-radius: 6px 6px 0 0;
 }
 
-.course-detail {
+.vertical-tile-small .course-detail {
     height: 185px;
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
 
-.shadow {
+.vertical-tile-small .shadow {
     position: Absolute;
     left: 0;
     top: 0;
@@ -301,8 +305,7 @@ a {
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.70);
 }
 
-#curriculum .vertical-tile-small:nth-child(n):hover {
-    background: none;
+.vertical-title-small div:hover {
     color: black;
     background-color: white;
 }
@@ -327,18 +330,17 @@ a {
     margin-top: 32px;
 }
 
+
 #curriculum a:nth-child(Odd) div:nth-child(1) {
-    /*
-    color: Black;
-    background-color: Silver;
-    */
     color: white;
-    background: linear-gradient(to bottom, Red, Red, black);
+    background: linear-gradient(to bottom, Crimson, Crimson, Pink);
+
 }
 
 #curriculum a:nth-child(Even) div:nth-child(1) {
-    color: Black;
-    background-color: Silver;
+    color: White;
+
+    background: linear-gradient(to bottom, Black, Black, Lightgray);
 }
 
 #curriculum a:nth-child(n+3) div:nth-child(1) .course-detail p:nth-child(2) {
@@ -347,8 +349,6 @@ a {
 
 #thesis {
     Display: block;
-    /*flex-wrap: wrap;*/
-    /* this was the fix! */
     padding-top: 0;
     justify-content: Space-between;
     color: Gray;
@@ -442,8 +442,8 @@ section {
     padding-bottom: 10px;
     border-radius: 8px;
     box-shadow: 5px 5px 15px 5px black;
-    opacity: 0.75;
-    padding: 2px;
+    opacity: 1;
+    padding: 8px;
     transition: opacity 5000ms;
 }
 
@@ -453,13 +453,10 @@ section {
     height: 25px;
     top: 4px;
     right: 4px;
-    color: Yellow;
+    color: White;
     Background-color: Black;
     border-radius: 5px;
-}
-
-#countdown-timer #close-button:hover {
-    cursor: pointer;
+    font-weight: 600;
 }
 
 #countdown-timer .headings {
@@ -500,6 +497,10 @@ section {
 
 #countdown-timer.close {
     opacity: 0;
+}
+
+#countdown-timer #close-button:hover {
+    cursor: pointer;
 }
 
 footer {
