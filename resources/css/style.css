@@ -72,6 +72,7 @@ a {
     background: linear-gradient(to Right, Crimson, Black);
     z-index: 10;
     border-radius: 6px;
+    opacity: 0.85;
 }
 
 #navbar img {
@@ -136,7 +137,7 @@ a {
     margin: 0;
     color: beige;
     width: 100%;
-    border-color: beige;
+    /*border-color: beige;*/
 }
 
 #banner #start-button a {
@@ -234,12 +235,12 @@ a {
 
 
 .horizontal-tile-small:nth-child(Odd) {
-    color: White;
+    color: Beige;
     background: linear-gradient(To Right, DarkGreen, Beige);
 }
 
 .horizontal-tile-small:nth-child(Even) {
-    color: beige;
+    color: Beige;
     background: linear-gradient(To Left, DarkGreen, Beige);
 }
 
@@ -486,16 +487,14 @@ section {
     height: 25px;
     top: 4px;
     right: 4px;
-    color: White;
-    Background-color: Black;
+    color: Black;
+    Background-color: Inherit;
     border-radius: 5px;
-    text-align: center;
 }
 
 #countdown-timer .headings {
     display: flex;
     justify-content: space-around;
-    /*font-family: Helvetica, Arial;*/
 }
 
 #countdown-timer h1 {
