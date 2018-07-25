@@ -131,7 +131,7 @@ a {
     justify-content: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background: linear-gradient(to right, rgb(19, 197, 19), Black, rgb(19, 197, 19));
+    background: linear-gradient(to right, Lightgreen, Black, Lightgreen);
     border-radius: 5px;
     margin: 0;
     color: beige;
@@ -178,7 +178,6 @@ a {
 
 #general-info {
     justify-content: flex-start;
-    padding-right: 0;
     color: gray;
     background-color: Beige;
 }
@@ -222,23 +221,28 @@ a {
     flex-direction: column;
     width: 40%;
     margin-left: 1.5rem;
+    margin-right: 1.0rem;
+    overflow:
 }
 
 .horizontal-tile-small {
     display: flex;
     align-items: center;
     padding: 1rem;
-    /*border: 1px solid black;*/
 }
-/*
+
+
 .horizontal-tile-small:nth-child(Odd) {
-    background: linear-gradient(To right, Crimson, Pink);
+    color: beige;
+    background: linear-gradient(To right, DarkGreen, Beige);
 }
 
 .horizontal-tile-small:nth-child(Even) {
-    background: linear-gradient(To Right, Green, Lightgreen);
+    color: White;
+    background: linear-gradient(To Right, Yellowgreen, Beige);
 }
-*/
+
+
 .horizontal-tile-small img {
     Width: 35%;
     Height: auto;
@@ -249,7 +253,12 @@ a {
 .horizontal-tile-small a {
     font-size: 1.25rem;
     font-weight: 700;
-    color: deepskyblue;
+    color: Yellow;
+}
+
+.horizontal-tile-small a:Visited {
+    color: white;
+    font-weight: 900;
 }
 
 .horizontal-tile-small a,
@@ -303,8 +312,8 @@ a {
 }
 
 #curriculum a div:nth-child(1):hover {
-    color: black!Important;
-    background: linear-gradient(to right, White, White)!Important;
+    color: black !Important;
+    background: linear-gradient(to right, White, White) !Important;
 }
 
 .vertical-tile-small img {
@@ -454,21 +463,19 @@ section {
 }
 
 #countdown-timer {
-    /*visibility: hidden;*/
     display: flex;
     position: relative;
     width: 500px;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
-    color: Black;
-    /*background-color: Yellow;*/
-    background: linear-gradient(to bottom, Beige,rgb(151, 117, 117));
+    color: White;
+    background-color: Crimson;
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 5px 5px 15px 5px black;
-    opacity: 1;
+    box-shadow: 2px 2px 8px 2px black;
+    opacity: 0.8;
     padding: 8px;
     transition: opacity 5000ms;
 }
@@ -483,7 +490,6 @@ section {
     Background-color: Black;
     border-radius: 5px;
     text-align: center;
-    font-weight: 700;
 }
 
 #countdown-timer .headings {
