@@ -157,7 +157,7 @@ a {
 
 .horizontal-tile-large p:nth-child(1) {
     font-family: 'Graduate Regular', Helvetica, Arial;
-    Color: gray;
+    Color: Crimson;
     font-size: 2rem;
     Font-weight: 700;
 }
@@ -193,6 +193,7 @@ a {
 }
 
 #general-info .vertical-tile-large p:nth-child(2) {
+    color: crimson;
     font-size: 2.25rem;
     Font-weight: 700;
     margin-top: 32px;
@@ -239,7 +240,7 @@ a {
 
 .horizontal-tile-small:nth-child(Even) {
     color: White;
-    background: linear-gradient(To Right, Yellowgreen, Beige);
+    background: linear-gradient(To Left, Darkgreen, Beige);
 }
 
 
@@ -276,7 +277,7 @@ a {
 }
 
 .section-heading {
-    color: Gray;
+    color: Crimson;
     Padding: 32px;
     width: 100%;
     text-align: center;
