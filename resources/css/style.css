@@ -87,7 +87,7 @@ a {
 #logotype h1 {
     width: auto;
     font-size: 1.75rem;
-    font-family: "Ringbearer Medium";
+    font-family: 'Ringbearer Medium';
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -204,6 +204,7 @@ a {
 
 #general-info .vertical-tile-large p:nth-child(3) {
     font-family: Times, script;
+    font-style: italic;
     Color: Inherit;
     font-size: 1.25rem;
     margin-top: 24px;
@@ -406,8 +407,9 @@ a {
 }
 
 .video-container p:nth-child(3) {
-    font-family: Times, Helvetica;
+    font-family: Times, Serif;
     font-size: 1.25rem;
+    font-style: italic;
 }
 
 #thesis .vertical-tile-large p:nth-child(3) {
@@ -433,7 +435,7 @@ a {
 }
 
 footer {
-    font-family: "Ringbearer Medium";
+    font-family: 'Ringbearer Medium';
     background-color: Beige;
     justify-content: space-between;
 }
@@ -469,8 +471,8 @@ section {
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
-    color: White;
-    background-color: Crimson;
+    color: Black;
+    background-color: Yellow;
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 8px;
