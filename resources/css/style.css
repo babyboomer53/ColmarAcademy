@@ -69,7 +69,7 @@ a {
     width: auto !important;
     justify-content: space-between;
     height: 90px;
-    background: linear-gradient(to Right, Crimson, Black);
+    background: linear-gradient(to Right, rgb(132, 31, 39), Black);
     z-index: 10;
     border-radius: 6px;
     opacity: 0.85;
@@ -158,7 +158,7 @@ a {
 
 .horizontal-tile-large p:nth-child(1) {
     font-family: 'Graduate Regular', Helvetica, Arial;
-    Color: Crimson;
+    Color: rgb(132, 31, 39);
     font-size: 2rem;
     Font-weight: 700;
 }
@@ -194,7 +194,7 @@ a {
 }
 
 #general-info .vertical-tile-large p:nth-child(2) {
-    color: crimson;
+    color: rgb(132, 31, 39);
     font-size: 2.25rem;
     Font-weight: 700;
     margin-top: 32px;
@@ -277,7 +277,7 @@ a {
 }
 
 .section-heading {
-    color: Crimson;
+    color: rgb(132, 31, 39);
     Padding: 32px;
     width: 100%;
     text-align: center;
@@ -363,7 +363,7 @@ a {
 
 #curriculum a:nth-child(Odd) div:nth-child(1) {
     color: white;
-    background: linear-gradient(to bottom, Crimson, Crimson, Pink);
+    background: linear-gradient(to bottom, rgb(132, 31, 39), rgb(132, 31, 39), Pink);
 
 }
 

@@ -62,7 +62,7 @@
                 <div class="small-tile-container">
                     <div class="horizontal-tile-small">
                         <img src="./resources/images/information-orientation.jpg" alt="Orientation date" />
-                        <div>
+                        <div style="display: flex; flex-direction: column; justify-content: Center;">
                             <h2 onMouseOver="show('countdown-timer')" onMouseOut="hide('countdown-timer')">Orientation date</h2>
                             <h2>Tue 10/11 &amp; Wed 10/12: 8am-3pm</h2>
                             <a href="#">Read more</a>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="horizontal-tile-small">
                         <img src="./resources/images/information-campus.jpg" alt="Campus information" />
-                        <div>
+                        <div style="display: flex; flex-direction: column; justify-content: Center;">
                             <h2>Our campus</h2>
                             <h2>Find a campus near you</h2>
                             <a href="#">Read more</a>
@@ -78,8 +78,8 @@
                     </div>
                     <div class="horizontal-tile-small">
                         <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecturer" />
-                        <div>
-                            <h2>Our guest lecturer</h2>
+                        <div style="display: flex; flex-direction: column; justify-content: Center;">
+                            <h2>Our guest lecture</h2>
                             <p>Join a keynote with Oliver Sack
                                 <br>about music in medical treatment</p>
                             <a href="#">Read more</a>
@@ -251,11 +251,11 @@
     <script>
         setTimeout(function() {
             document.getElementById('countdown-timer').className = 'close';
-        }, 10000);
+        }, 15000);
 
         setTimeout(function() {
             document.getElementById('countdown-timer').style.display = 'none';
-        }, 15000);
+        }, 20000);
 
     </script>
 
