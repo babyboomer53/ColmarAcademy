@@ -248,7 +248,7 @@ a {
 .horizontal-tile-small:nth-child(Even) {
     color: Beige;
     /*background: linear-gradient(To Left, Black, var(--ColmarGreen), Beige);*/
-    background: linear-gradient(To Left, DarkGreen, Beige);
+    background: linear-gradient(To Left, DarkRed, Beige);
 }
 
 .horizontal-tile-small img {
