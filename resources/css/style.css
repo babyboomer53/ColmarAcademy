@@ -138,7 +138,7 @@ a {
     justify-content: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: var(--ColmarGreen);
+    background: linear-gradient(to Bottom, Lightgreen, Green, Black, Lightgreen);
     border-radius: 6px;
     margin: 0;
     color: beige;
@@ -239,15 +239,16 @@ a {
     padding: 1rem;
 }
 
-
 .horizontal-tile-small:nth-child(Odd) {
     color: beige;
-    background: linear-gradient(To Right, Black, var(--ColmarGreen), Beige);
+    /*background: linear-gradient(To Right, Black, var(--ColmarGreen), Beige);*/
+    background: linear-gradient(To Right, DarkGreen, Beige);
 }
 
 .horizontal-tile-small:nth-child(Even) {
     color: Beige;
-    background: linear-gradient(To Left, Black, var(--ColmarGreen), Beige);
+    /*background: linear-gradient(To Left, Black, var(--ColmarGreen), Beige);*/
+    background: linear-gradient(To Left, DarkGreen, Beige);
 }
 
 .horizontal-tile-small img {
