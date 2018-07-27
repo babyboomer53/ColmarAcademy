@@ -478,13 +478,14 @@ section {
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
-    color: Black;
-    background-color: Yellow;
+    color: White;
+    background-color: var(--OldBrickRed);
+    background-color: Black;
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px 2px black;
-    opacity: 0.8;
+    opacity: 1;
     padding: 8px;
     transition: opacity 5000ms;
 }
@@ -495,8 +496,9 @@ section {
     height: 25px;
     top: 4px;
     right: 4px;
-    color: Black;
+    color: White;
     Background-color: Inherit;
+    border-color: white;
     border-radius: 5px;
 }
 
@@ -531,7 +533,7 @@ section {
     height: 40px;
     line-height: 40px;
     Color: black;
-    background-color: White;
+    background-color: LightGray;
     box-shadow: inset 3px 3px 7px 2px;
     border-radius: 4px;
 }
