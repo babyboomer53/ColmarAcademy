@@ -19,7 +19,7 @@
             <div id="video-container" style="z-index: -1; height: 100%; position: fixed; width: 100%">
                 <video autoplay muted style="width:100% ; height: auto; min-width:100%; min-height:100%; object-fit: cover; position:absolute; z-index: -1">
                     <source id="mp4" src="./resources/videos/ColmarAcademy.mp4" type="video/mp4">
-                    <p>Your user agent does not support the HTML 5 video element.</p>
+                    Your user agent does not support the HTML 5 video element.
                 </video>
                 <div id="diffuser"></div>
                 <div class="shadow"></div>
@@ -31,6 +31,7 @@
                     <div id="logotype">
                         <h1> Colmar Academy</h1>
                     </div>
+                    <img src="./resources/images/ic-logo-150-beige-rotated.svg" alt="Colmar Academy" />
                 </div>
                 <nav>
                     <a href="" target="_blank">On Campus</a>
@@ -208,7 +209,9 @@
 
             <div class="countdown-container">
                 <div id="countdown-timer">
-                    <button onClick="hide('countdown-timer')" id="close-button" type="button">X</button>
+                    <!--<button onClick="hide('countdown-timer')" id="close-button" type="button">X</button>-->
+                    <div onClick="hide('countdown-timer')" id="close-button">X</div>
+
                     <h1 style="text-align: center; margin-bottom: 0;">Time left until next orientation</h1>
                     <div class="headings">
                         <h2>Days</h2>
