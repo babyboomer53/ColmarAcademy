@@ -67,8 +67,9 @@ a {
     position: absolute;
     top: 0;
     background-color: Gray;
-    opacity: 0.5;
+    opacity: 0;
     z-index: 10;
+    transition: opacity 5000ms;
 }
 
 #navbar {
@@ -87,6 +88,13 @@ a {
 #logo {
     display: flex;
     align-items: center;
+    margin-left: 1.5rem;
+    /*border: solid 1px Black;*/
+    background-color: black;
+}
+
+#logotype {
+    /*border: 2px solid black;*/
 }
 
 #logotype h1 {
@@ -96,11 +104,12 @@ a {
     font-weight: 700;
     display: flex;
     align-items: center;
-    height: 70px;
+    padding: 22px 8px;
     color: Black;
     background-color: Beige;
     box-shadow: inset 5px 2px 9px 2px;
-    border-radius: 4px;
+    text-shadow: 2px 2px 4px;
+    text-decoration: underline;
 }
 
 #navbar nav {
