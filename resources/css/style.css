@@ -78,7 +78,6 @@ a {
     background: linear-gradient(to Right, var(--BrickRed), Black);
     z-index: 10;
     border-radius: 6px;
-    opacity: 1;
 }
 
 #navbar img {
@@ -128,6 +127,11 @@ a {
     margin-bottom: 2rem;
 }
 
+#banner-content p:nth-child(2) {
+    color: Gray;
+    font-family: 'Times New Roman', serif;
+}
+
 #banner-content nav {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -139,10 +143,12 @@ a {
     padding: 1rem;
     font-size: 1.5rem;
     background: linear-gradient(to Bottom, Lightgreen, Green, Black, Lightgreen);
+    /*background: linear-gradient(to Bottom, DimGray, White, Lightgray, Gray, Black, Lightgray);*/
     border-radius: 6px;
     margin: 0;
     color: beige;
     width: 100%;
+    border: none;
     /*border-color: beige;*/
 }
 
@@ -311,12 +317,6 @@ a {
     color: Gray;
     Background-color: White;
     border-radius: 6px;
-    /*
-    transition-delay: 100ms;
-    transition-duration: 250ms;
-    transition-property: all;
-    transition-timing-function: ease-in;
-    */
 }
 
 #curriculum a div:nth-child(1):hover {
@@ -443,7 +443,8 @@ a {
 
 footer {
     font-family: 'Ringbearer Medium', Courier;
-    background-color: Beige;
+    color: beige;
+    background-color: black !Important;
     justify-content: space-between;
 }
 
@@ -500,6 +501,7 @@ section {
     Background-color: Inherit;
     border-color: white;
     border-radius: 5px;
+    text-align: center;
 }
 
 #countdown-timer .headings {
