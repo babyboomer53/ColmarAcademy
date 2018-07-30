@@ -119,11 +119,8 @@ a {
     margin-right: 5px;
     color: Black;
     background-color: Beige;
-    border-radius: 0px 4px 4px 0px;
     text-shadow: 2px 2px 4px;
     text-decoration: underline;
-    box-shadow: inset 6px 4px 20px 2px;
-
 }
 
 #navbar nav {
@@ -330,7 +327,7 @@ a {
     width: 25%;
     margin: 0 16px;
     margin-bottom: 2rem;
-    border-radius: 16px;
+    border-radius: 6px;
 }
 
 #curriculum .vertical-tile-small {
@@ -491,7 +488,7 @@ footer div {
 footer,
 section {
     background-color: beige;
-    border-radius: 6px;
+    border-radius: 4px;
     margin-bottom: 1rem !Important;
 }
 
@@ -522,10 +519,10 @@ section {
     right: 4px;
     color: White;
     Background-color: Inherit;
-    border-color: white;
+    /*border-color: white;*/
     border-radius: 5px;
     text-align: center;
-    border: 2px solid lightgray;
+    border: 1px solid White;
     line-height: 25px;
 }
 
@@ -559,8 +556,8 @@ section {
     width: 100px;
     height: 40px;
     line-height: 40px;
-    Color: black;
-    background-color: LightGray;
+    Color: Black;
+    background-color: Lightgray;
     box-shadow: inset 3px 3px 7px 2px;
     border-radius: 4px;
 }
@@ -571,6 +568,8 @@ section {
 
 #countdown-timer #close-button:hover {
     cursor: pointer;
+    color: black;
+    background-color: red;
 }
 
 footer {
