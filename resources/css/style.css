@@ -266,15 +266,15 @@ a {
 }
 
 .horizontal-tile-small:nth-child(Odd) {
-    color: beige;
+    color: White;
     /*background: linear-gradient(To Right, Black, var(--ColmarGreen), Beige);*/
-    background: linear-gradient(To Right, DarkGreen, Beige);
+    background: linear-gradient(To Right, Black, var(--ColmarGreen), Beige);
 }
 
 .horizontal-tile-small:nth-child(Even) {
     color: Beige;
     /*background: linear-gradient(To Left, Black, var(--ColmarGreen), Beige);*/
-    background: linear-gradient(To Left, DarkRed, Beige);
+    background: linear-gradient(To Left, Black, var(--BrickRed), Beige);
 }
 
 .horizontal-tile-small img {
@@ -290,7 +290,7 @@ a {
     color: Yellow;
 }
 
-.horizontal-tile-small a:Visited {
+.horizontal-tile-small a:visited {
     color: white;
     font-weight: 900;
 }
@@ -307,6 +307,11 @@ a {
 
 .horizontal-tile-small h2:nth-child(2) {
     font-size: 1rem;
+}
+
+#general-info .horizontal-tile-small:nth-child(1) h2:nth-child(2):hover {
+    cursor: pointer;
+    color: Yellow;
 }
 
 .section-heading {
