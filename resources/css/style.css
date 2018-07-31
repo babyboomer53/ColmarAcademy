@@ -100,7 +100,7 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
-    box-shadow: inset 6px 4px 20px 2px;
+    box-shadow: inset 6px 4px 20px 2px Black;
     border-radius: 4px;
 }
 
@@ -167,7 +167,7 @@ a {
     border-radius: 6px;
     margin: 0;
     color: beige;
-    width: 100%;
+    /*width: 100%;*/
     border: none;
     /*border-color: beige;*/
 }
@@ -290,11 +290,6 @@ a {
     color: Yellow;
 }
 
-.horizontal-tile-small a:visited {
-    color: white;
-    font-weight: 900;
-}
-
 .horizontal-tile-small a,
 .horizontal-tile-small p,
 .horizontal-tile-small h2 {
@@ -396,12 +391,10 @@ a {
 #curriculum a:nth-child(Odd) div:nth-child(1) {
     color: white;
     background: linear-gradient(to bottom, var(--OldBrickRed), var(--OldBrickRed), Pink);
-
 }
 
 #curriculum a:nth-child(Even) div:nth-child(1) {
     color: White;
-
     background: linear-gradient(to bottom, Black, Black, Lightgray);
 }
 
