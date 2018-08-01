@@ -133,10 +133,6 @@ a {
     margin: 0 1rem;
 }
 
-#banner {
-    /*margin-top: 6.625rem;*/
-}
-
 #banner-content {
     display: flex;
     flex-direction: column;
@@ -163,13 +159,10 @@ a {
     padding: 1rem;
     font-size: 1.5rem;
     background: linear-gradient(to Bottom, Lightgreen, Green, Black, Lightgreen);
-    /*background: linear-gradient(to Bottom, DimGray, White, Lightgray, Gray, Black, Lightgray);*/
     border-radius: 6px;
     margin: 0;
     color: beige;
-    /*width: 100%;*/
     border: none;
-    /*border-color: beige;*/
 }
 
 #banner #start-button a {
@@ -260,13 +253,11 @@ a {
 
 .horizontal-tile-small:nth-child(Odd) {
     color: White;
-    /*background: linear-gradient(To Right, Black, var(--ColmarGreen), Beige);*/
     background: linear-gradient(To Right, Black, var(--ColmarGreen), Beige);
 }
 
 .horizontal-tile-small:nth-child(Even) {
     color: Beige;
-    /*background: linear-gradient(To Left, Black, var(--ColmarGreen), Beige);*/
     background: linear-gradient(To Left, Black, var(--BrickRed), Beige);
 }
 
@@ -347,7 +338,6 @@ a {
 .vertical-tile-small .course-detail {
     height: 185px;
     margin-left: 1rem;
-    /*margin-bottom: 2rem;*/
 }
 
 .vertical-tile-small .shadow {
@@ -500,53 +490,6 @@ footer {
     padding: 8px;
     transition: opacity 5000ms;
 }
-
-/*
-#countdown-timer #close-button {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 4px;
-    right: 4px;
-    color: White;
-    Background-color: Inherit;
-    border-radius: 5px;
-    text-align: center;
-    border: 1px solid White;
-    line-height: 25px;
-}
-
-#countdown-timer #close-button {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    transform: rotate(45deg);
-}
-
-#countdown-timer #close-button:before,
-#countdown-timer #close-button:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: #d00;
-}
-
-#countdown-timer #close-button:before {
-    left: 50%;
-    width: 30%;
-    margin-left: -15%;
-    height: 100%;
-}
-
-#countdown-timer #close-button:after {
-    top: 50%;
-    height: 30%;
-    margin-top: -15%;
-    width: 100%;
-}
-*/
 
 #countdown-timer #close-button {
     position: absolute;
