@@ -111,7 +111,7 @@ a {
 #logotype h1 {
     width: auto;
     font-size: 1.75rem;
-    font-family: 'Ringbearer Medium', Courier;
+    font-family: 'Ringbearer Medium', "Graduate Regular";
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -197,13 +197,6 @@ a {
 
 .horizontal-tile-large p:nth-child(2) {
     font-family: Times, Arial;
-    Color: gray;
-    font-size: 2rem;
-    Font-weight: 700;
-}
-
-.horizontal-tile-large p:nth-child(3) {
-    font-family: Courier, Arial;
     Color: gray;
     font-size: 2rem;
     Font-weight: 700;
@@ -459,13 +452,6 @@ a {
     margin-left: 1.5rem;
 }
 
-footer {
-    font-family: 'Ringbearer Medium', Courier;
-    color: beige;
-    background-color: black !Important;
-    justify-content: space-between;
-}
-
 footer h2 {
     margin-left: 1.5rem;
 }
@@ -490,6 +476,11 @@ section {
     margin-bottom: 1rem !Important;
 }
 
+footer {
+    font-family: 'Ringbearer Medium', "Graduate Regular";
+    justify-content: space-between;
+}
+
 #countdown-timer {
     display: flex;
     position: relative;
@@ -497,9 +488,10 @@ section {
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
-    color: White;
+    color: Black;
     background-color: var(--OldBrickRed);
-    background-color: Black;
+    background-color: Beige;
+    border: 4px solid Blue;
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 8px;
@@ -509,6 +501,7 @@ section {
     transition: opacity 5000ms;
 }
 
+/*
 #countdown-timer #close-button {
     position: absolute;
     width: 25px;
@@ -517,11 +510,74 @@ section {
     right: 4px;
     color: White;
     Background-color: Inherit;
-    /*border-color: white;*/
     border-radius: 5px;
     text-align: center;
     border: 1px solid White;
     line-height: 25px;
+}
+
+
+#countdown-timer #close-button {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+}
+
+#countdown-timer #close-button:before,
+#countdown-timer #close-button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #d00;
+}
+
+#countdown-timer #close-button:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+#countdown-timer #close-button:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+*/
+
+#countdown-timer #close-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+}
+
+#countdown-timer #close-button:hover {
+    opacity: 1;
+}
+
+#countdown-timer #close-button:before,
+#close-button:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: Gray;
+}
+
+#countdown-timer #close-button:before {
+    transform: rotate(45deg);
+}
+
+#close-button:after {
+    transform: rotate(-45deg);
 }
 
 #countdown-timer .headings {
@@ -566,8 +622,6 @@ section {
 
 #countdown-timer #close-button:hover {
     cursor: pointer;
-    color: black;
-    background-color: red;
 }
 
 footer {
