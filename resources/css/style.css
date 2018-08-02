@@ -73,6 +73,7 @@ a {
 }
 
 #navbar {
+    /*display: none;*/
     width: auto !important;
     justify-content: space-between;
     height: 90px;
@@ -133,6 +134,21 @@ a {
     margin: 0 1rem;
 }
 
+.mobile-header {
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+    left: 0;
+    top: 0;
+    z-index: 12;
+}
+/*
+#top-of-page {
+    display: none;
+}
+*/
 #banner-content {
     display: flex;
     flex-direction: column;
