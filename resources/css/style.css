@@ -76,7 +76,7 @@ a {
     width: auto !important;
     justify-content: space-between;
     height: 90px;
-    background: linear-gradient(to Right, var(--BrickRed), var(--OldBrickRed), Black);
+    background: linear-gradient(to Right, Black, var(--BrickRed), Black);
     z-index: 10;
 }
 
@@ -483,7 +483,7 @@ footer {
     background: linear-gradient(to right, black, gray, lightgray, gray, black);
     font-weight: 600;
     padding-bottom: 10px;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 2px 2px 8px 2px black;
     padding: 8px;
     transition: opacity 5000ms;
@@ -496,14 +496,11 @@ footer {
     width: 35px;
     height: 35px;
     opacity: 0.3;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 #countdown-timer #close-button:hover {
-    opacity: 1;
-    background-color: red;
-    /*background: linear-gradient(to right, Gray, Black, LightGray, Black, gray, Black);*/
-    box-shadow: 2px 2px 12px 2px Red;
+    opacity: 0.8;
 }
 
 #countdown-timer #close-button:before,
