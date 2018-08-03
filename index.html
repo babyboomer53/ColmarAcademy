@@ -18,8 +18,7 @@
 
             <div id="video-container" style="z-index: -1; height: 100%; position: fixed; width: 100%">
                 <video autoplay muted style="width:100% ; height: auto; min-width:100%; min-height:100%; object-fit: cover; position:absolute; z-index: -1">
-                    <source id="mp4" src="./resources/videos/ColmarAcademy.mp4" type="video/mp4">
-                    Your user agent does not support the HTML 5 video element.
+                    <source id="mp4" src="./resources/videos/ColmarAcademy.mp4" type="video/mp4"> Your user agent does not support the HTML 5 video element.
                 </video>
                 <div id="diffuser"></div>
                 <div class="shadow"></div>
@@ -46,16 +45,24 @@
             <div id="top-of-page" style="height: 6.75rem; visibility: hidden;">Spacer</div>
 
             <header class="mobile-header">
-                <img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo" />
-                <img src="resources/images/ic-on-campus.svg" alt="On campus" />
-                <img src="resources/images/ic-online.svg" alt="Link to online courses" />
-                <img src="resources/images/ic-login.svg" alt="Login Link" />
+                <a href="https://www.stanford.edu/" target="_blank">
+                    <img src="resources/images/ic-logo-beige.svg" alt="Colmar Academy Logo" />
+                </a>
+                <a href="https://www.stanford.edu/campus-life/" target="_blank">
+                    <img src="resources/images/ic-on-campus-beige.svg" alt="On campus" />
+                </a>
+                <a href="https://online.stanford.edu/" target="_blank">
+                    <img src="resources/images/ic-online-beige.svg" alt="Link to online courses" />
+                </a>
+                <a href="https://axess.sahr.stanford.edu/" target="_blank">
+                    <img src="resources/images/ic-login-beige.svg" alt="Login Link" />
+                </a>
             </header>
-            
+
             <section id="banner" class="horizontal-tile-large flex-container" style="z-index: 0;">
                 <h2 style="display: none;">Inspiration</h2>
                 <img src="./resources/images/banner.jpg" alt="learn something new" />
-                <div id="banner-content" style="margin-right: 1.5em;">
+                <div id="banner-content">
                     <p>Learn something new every day</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="https://www.stanford.edu/about/" target="_blank">
@@ -69,7 +76,9 @@
                 <div class="vertical-tile-large">
                     <img src="./resources/images/information-main.jpg" alt="General information" />
                     <p>It doesn't hurt to keep practicing</p>
-                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat neque.
+                        Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
+                        tristique ligula."</p>
                     <p>Emanuel, Sr Strategist at Hiring.com</p>
                 </div>
 
@@ -186,19 +195,23 @@
                 <h2 class="section-heading">Thesis Exhibit</h2>
                 <div class="video-container">
                     <video autoplay loop muted style="width: 100%; height: 100%; ">
-                    <source id="mp4-again" src="./resources/videos/thesis.mp4">
-                    <p>Your user agent does not support the HTML 5 video element.</p>
-                </video>
+                        <source id="mp4-again" src="./resources/videos/thesis.mp4">
+                        <p>Your user agent does not support the HTML 5 video element.</p>
+                    </video>
                     <p>Reimagine urban</p>
-                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula. "</p>
+                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat neque.
+                        Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
+                        tristique ligula. "</p>
                 </div>
 
                 <div class="tile-container ">
                     <div class="horizontal-tile-small">
                         <img src="./resources/images/thesis-fisma.jpg " alt="Fisma" />
                         <div>
-                            <h2>Fisma: Design and<br>Prototype</h2>
-                            <h2>Designer showcase of new<br>prototype product</h2>
+                            <h2>Fisma: Design and
+                                <br>Prototype</h2>
+                            <h2>Designer showcase of new
+                                <br>prototype product</h2>
                         </div>
                     </div>
                     <div class="horizontal-tile-small ">
@@ -242,7 +255,8 @@
             </div>
 
             <footer class="flex-container">
-                <h2 class="copyright-notice "><span>&copy; </span>2018 Colmar Academy. All rights reserved</h2>
+                <h2 class="copyright-notice ">
+                    <span>&copy; </span>2018 Colmar Academy. All rights reserved</h2>
                 <div class="navbar ">
                     <a href="#" target="_blank">Terms</a>
                     <a href="#" target="_blank">Privacy</a>
@@ -262,22 +276,20 @@
         function hide(id) {
             document.getElementById(id).style.display = "none";
         }
-
     </script>
 
     <script>
-        setTimeout(function() {
+        setTimeout(function () {
             document.getElementById('countdown-timer').className = 'close';
         }, 15000);
 
-        setTimeout(function() {
+        setTimeout(function () {
             document.getElementById('countdown-timer').style.display = 'none';
         }, 20000);
 
-        setTimeout(function() {
+        setTimeout(function () {
             document.getElementById('diffuser').style.opacity = '0.5';
         }, 30000);
-
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
