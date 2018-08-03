@@ -76,7 +76,7 @@ a {
     width: auto !important;
     justify-content: space-between;
     height: 90px;
-    background: linear-gradient(to Right, Black, var(--BrickRed), Black);
+    background: linear-gradient(to Right, var(--BrickRed), Black);
     z-index: 10;
 }
 
