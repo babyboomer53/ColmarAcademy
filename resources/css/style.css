@@ -299,6 +299,10 @@ a {
     color: Yellow;
 }
 
+#general-info-mobile {
+    display: none;
+}
+
 .section-heading {
     color: var(--OldBrickRed);
     Padding: 32px;
@@ -596,6 +600,7 @@ section {
         flex-direction: column;
         width: 100%;
         flex-wrap: wrap;
+        overflow: hidden;
     }
     footer,
     #banner,
@@ -606,11 +611,20 @@ section {
     .mobile-header {
         display: flex;
         justify-content: space-around;
-
+        Justify-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        Width: 100%;
+        padding-top: 0.625rem;
         background: linear-gradient(to right, Black, var(--BrickRed), Black);
     }
+    .mobile-header img {
+        width: Auto;
+        height: auto;
+    }
     #top-of-page {
-        display: none;
+        height: 44.5px !Important;
     }
     #navbar {
         display: none;
@@ -635,5 +649,34 @@ section {
     #banner-content p:nth-child(2) {
         color: darkcyan;
         font-style: italic;
+    }
+    #general-info {
+        display: none;
+    }
+    #general-info-mobile {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    #general-info-mobile img {
+        width: 100%;
+        margin: 1rem;
+    }
+    #general-info-mobile div {
+        margin-left: 1rem;
+    }
+    #general-info-mobile div h2:nth-child(Odd) {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #general-info-mobile div h2:nth-child(3) {
+        font-size: 1rem;
+    }
+    #general-info-mobile div a {
+        color: red;
+        font-weight: bold;
+    }
+    #curriculum {
+        display: none;
     }
 }
