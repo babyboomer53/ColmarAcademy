@@ -589,24 +589,31 @@ section {
 }
 
 @media only screen and (max-width: 320px) {
+    html {
+        color: gray;
+        background-color: white;
+    }
     #video-container {
         display: none;
     }
     .countdown-container {
         display: none;
     }
+
     .flex-container {
         display: flex;
-        flex-direction: column;
+
         width: 100%;
         flex-wrap: wrap;
         overflow: hidden;
     }
-    footer,
+
     #banner,
     section {
+
         background-color: Beige;
         box-shadow: none;
+        border-radius: 0px;
     }
     .mobile-header {
         display: flex;
@@ -678,5 +685,52 @@ section {
     }
     #curriculum {
         display: none;
+    }
+    #curriculum-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    #curriculum-mobile h2 {
+        font-family: "Graduate Regular", Helvetica;
+        font-size: 2rem;
+        color: var(--OldBrickRed);
+        text-align: center;
+    }
+    #curriculum-mobile p {
+        padding: 1rem;
+        width: 320px;
+        color: gray;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: left;
+    }
+    #curriculum-mobile a {
+        margin-bottom: 1rem;
+    }
+
+    #thesis {
+        display: none;
+    }
+    footer {
+        display: none !Important;
+    }
+    #footer-mobile {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 1rem;
+        font-family: "Graduate Regular", Helvetica;
+        font-size: 0.75rem;
+        justify-content: flex-start;
+        color: beige;
+        background-color: black !Important;
+    }
+    #footer-mobile h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer-mobile .copyright-notice span {
+        font-family: Helvetica, Arial;
     }
 }
