@@ -588,7 +588,7 @@ section {
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
     html {
         color: gray;
         background-color: white;
@@ -605,7 +605,7 @@ section {
 
         width: 100%;
         flex-wrap: wrap;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     #banner,
@@ -640,6 +640,7 @@ section {
         width: 100% !Important;
         margin: 0 auto;
         margin-top: 1rem;
+        padding-bottom: 2rem;
     }
     #banner img {
         padding: 0;
@@ -650,35 +651,50 @@ section {
         margin: 0 1rem;
         background: linear-gradient(to right, Black, var(--ColmarGreen), Black);
     }
+    #banner-content {
+        margin: 0;
+    }
     #banner-content p {
         margin-left: 1rem;
+    }
+    #banner-content p:nth-child(1) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     #banner-content p:nth-child(2) {
         color: darkcyan;
         font-style: italic;
+        margin-bottom: 1.5rem;
     }
+
     #general-info {
         display: none;
     }
     #general-info-mobile {
         display: flex;
         width: 100%;
-        flex-direction: column;
+
     }
     #general-info-mobile img {
         width: 100%;
-        margin: 1rem;
-    }
-    #general-info-mobile div {
         margin-left: 1rem;
+        margin-right: 1rem;
     }
-    #general-info-mobile div h2:nth-child(Odd) {
+    #general-info-mobile h2:nth-child(Odd) {
         font-size: 2rem;
         font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    #general-info-mobile div p {
+        margin-bottom: 1rem;
+    }
+    #general-info-mobile div h2:nth-child(2) {
+        margin-bottom: 1rem;
     }
     #general-info-mobile div h2:nth-child(3) {
         font-size: 1rem;
     }
+
     #general-info-mobile div a {
         color: red;
         font-weight: bold;
@@ -689,27 +705,51 @@ section {
     #curriculum-mobile {
         display: flex;
         flex-direction: column;
+        padding-bottom: 1rem;
     }
     #curriculum-mobile h2 {
         font-family: "Graduate Regular", Helvetica;
         font-size: 2rem;
         color: var(--OldBrickRed);
-        text-align: center;
+        margin-bottom: 1rem;
     }
-    #curriculum-mobile p {
+    #curriculum-mobile div p {
+        color: White !Important;
         padding: 1rem;
-        width: 320px;
-        color: gray;
         font-size: 1rem;
         font-weight: 600;
         text-align: left;
     }
-    #curriculum-mobile a {
+    #curriculum-mobile div a:nth-child(Odd) p {
+        color: Beige;
+        background: linear-gradient(to right, var(--ColmarGreen), var(--ColmarGreen), beige);
+    }
+    #curriculum-mobile div a:nth-child(Even) p {
+        color: Beige;
+        background: linear-gradient(to Left, var(--BrickRed), var(--BrickRed), beige);
+    }
+    #curriculum-mobile div a {
         margin-bottom: 1rem;
     }
-
     #thesis {
         display: none;
+    }
+    #thesis-mobile {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        font-size: 2rem;
+    }
+    #thesis-mobile h2 {
+        font-size: 2rem;
+        color: var(--OldBrickRed);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    #thesis-mobile .video-container {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 3.5rem;
     }
     footer {
         display: none !Important;
@@ -718,12 +758,14 @@ section {
         position: fixed;
         left: 0;
         bottom: 0;
-        padding: 1rem;
+        Justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         font-family: "Graduate Regular", Helvetica;
         font-size: 0.75rem;
-        justify-content: flex-start;
+        text-align: justify;
         color: beige;
-        background-color: black !Important;
+        background-color: black;
     }
     #footer-mobile h2 {
         padding: 0;
