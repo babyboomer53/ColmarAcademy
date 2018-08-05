@@ -132,6 +132,10 @@ a {
     margin: 0 1rem;
 }
 
+.mobile-header {
+    display: none;
+}
+
 #banner-content {
     display: flex;
     flex-direction: column;
@@ -292,6 +296,10 @@ a {
     color: Yellow;
 }
 
+#general-info-mobile {
+    display: none;
+}
+
 .section-heading {
     color: var(--OldBrickRed);
     Padding: 32px;
@@ -369,7 +377,6 @@ a {
     margin-top: 32px;
 }
 
-
 #curriculum a:nth-child(Odd) div:nth-child(1) {
     color: white;
     background: linear-gradient(to bottom, var(--OldBrickRed), var(--OldBrickRed), Pink);
@@ -382,6 +389,10 @@ a {
 
 #curriculum a:nth-child(n+3) div:nth-child(1) .course-detail p:nth-child(2) {
     margin-top: 48px;
+}
+
+#curriculum-mobile {
+    display: none;
 }
 
 #thesis {
@@ -441,6 +452,10 @@ a {
     margin-left: 1.5rem;
 }
 
+#thesis-mobile {
+    display: none;
+}
+
 footer h2 {
     margin-left: 1.5rem;
 }
@@ -468,6 +483,10 @@ section {
 footer {
     font-family: 'Ringbearer Medium', "Graduate Regular";
     justify-content: space-between;
+}
+
+#footer-mobile {
+    display: none;
 }
 
 #countdown-timer {
@@ -574,4 +593,209 @@ footer,
 #banner,
 section {
     box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        color: var(--ColmarGreen);
+        background-color: white;
+    }
+    section {
+        margin-bottom: 0 !Important;
+        border-bottom: 1px Solid Skyblue;
+    }
+    #video-container {
+        display: none;
+    }
+    .countdown-container {
+        display: none;
+    }
+
+    .flex-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        /*overflow: hidden;*/
+    }
+
+    #banner,
+    section {
+        background-color: Beige;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    .mobile-header {
+        display: flex;
+        justify-content: space-around;
+        Justify-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        Width: 100%;
+        padding-top: 0.625rem;
+        background: linear-gradient(to right, Black, var(--BrickRed), Black);
+    }
+    .mobile-header img {
+        width: Auto;
+        height: auto;
+    }
+    #top-of-page {
+        height: 44.5px !Important;
+    }
+    #navbar {
+        display: none;
+    }
+    #banner-content {
+        width: 100% !Important;
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    #banner img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    #banner #start-button {
+        margin: 0 1rem;
+        background: linear-gradient(to right, Black, var(--ColmarGreen), Black);
+    }
+    #banner-content {
+        margin: 0;
+    }
+    #banner-content p {
+        margin-left: 1rem;
+    }
+    #banner-content p:nth-child(1) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    #banner-content p:nth-child(2) {
+        color: darkcyan;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+    }
+
+    #general-info {
+        display: none;
+    }
+    #general-info-mobile {
+        display: flex;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    #general-info-mobile img {
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #general-info-mobile div {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    #general-info-mobile h2:nth-child(Odd) {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    #general-info-mobile div p {
+        margin-bottom: 1rem;
+    }
+    #general-info-mobile div:nth-child(n) {
+        margin-bottom: 4rem;
+    }
+    #general-info-mobile div h2:nth-child(2) {
+        margin-bottom: 1rem;
+    }
+    #general-info-mobile div h2:nth-child(3) {
+        font-size: 1rem;
+    }
+
+    #general-info-mobile div a {
+        color: red;
+        font-weight: bold;
+    }
+    #general-info-mobile div:nth-child(1) a {
+        color: red;
+        font-weight: bold;
+    }
+    #curriculum {
+        display: none;
+    }
+    #curriculum-mobile {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #curriculum-mobile h2 {
+        font-family: "Graduate Regular", Helvetica;
+        font-size: 2rem;
+        color: var(--OldBrickRed);
+        margin-bottom: 1rem;
+    }
+    #curriculum-mobile div p {
+        color: White !Important;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: left;
+    }
+    #curriculum-mobile div a:nth-child(Odd) p {
+        color: Beige;
+        background: linear-gradient(to right, var(--ColmarGreen), var(--ColmarGreen), beige);
+    }
+    #curriculum-mobile div a:nth-child(Even) p {
+        color: Beige;
+        background: linear-gradient(to Left, var(--BrickRed), var(--BrickRed), beige);
+    }
+    #curriculum-mobile div a {
+        margin-bottom: 1rem;
+    }
+    #thesis {
+        display: none;
+    }
+    #thesis-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        font-size: 2rem;
+    }
+    #thesis-mobile h2 {
+        font-size: 2rem;
+        color: var(--OldBrickRed);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    #thesis-mobile .video-container {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 3.5rem;
+    }
+    footer {
+        display: none !Important;
+    }
+    #footer-mobile {
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        Justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: "Graduate Regular", Helvetica;
+        font-size: 0.75rem;
+        text-align: justify;
+        color: beige;
+        background-color: black;
+    }
+    #footer-mobile h2 {
+        padding: 0;
+        margin: 0;
+    }
+    #footer-mobile .copyright-notice span {
+        font-family: Helvetica, Arial;
+    }
 }

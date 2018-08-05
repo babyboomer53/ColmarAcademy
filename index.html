@@ -45,10 +45,27 @@
 
             <div id="top-of-page" style="height: 6.75rem; visibility: hidden;">Spacer</div>
 
+            <header class="mobile-header">
+
+                <a href="https://www.stanford.edu/" target="_blank">
+                    <img src="resources/images/ic-logo-beige.svg" alt="Colmar Academy Logo" />
+                </a>
+                <a href="https://www.stanford.edu/campus-life/" target="_blank">
+                    <img src="resources/images/ic-on-campus-beige.svg" alt="On campus" />
+                </a>
+                <a href="https://online.stanford.edu/" target="_blank">
+                    <img src="resources/images/ic-online-beige.svg" alt="Link to online courses" />
+                </a>
+                <a href="https://axess.sahr.stanford.edu/" target="_blank">
+                    <img src="resources/images/ic-login-beige.svg" alt="Login Link" />
+                </a>
+
+            </header>
+
             <section id="banner" class="horizontal-tile-large flex-container" style="z-index: 0;">
                 <h2 style="display: none;">Inspiration</h2>
                 <img src="./resources/images/banner.jpg" alt="learn something new" />
-                <div id="banner-content" style="margin-right: 1.5em;">
+                <div id="banner-content">
                     <p>Learn something new every day</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="https://www.stanford.edu/about/" target="_blank">
@@ -96,6 +113,33 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="general-info-mobile" class="flex-container">
+
+                <img src="resources/images/information-orientation-mobile.jpg" alt="Orientation information" />
+
+                <div>
+                    <h2>Orientation date</h2>
+                    <h2 onClick="show('countdown-timer')">Tue 10/11 &amp; Wed 10/12: 8am-3pm</h2>
+                    <a href="https://undergrad.stanford.edu/advising/first-year-students/new-student-orientation-nso" target="_blank">Read more</a>
+                </div>
+
+                <img src="resources/images/information-campus-mobile.jpg" alt="Our campus" />
+                <div>
+                    <h2>Our campus</h2>
+                    <h2>Find a campus near you</h2>
+                    <a href="https://www.stanford.edu/" target="_blank">Read more</a>
+                </div>
+
+                <img src="resources/images/information-guest-lecture-mobile.jpg" alt="Guest lecturer" />
+                <div style="margin-bottom: 2rem;">
+                    <h2>Our guest lecturer</h2>
+                    <p>Join a keynote with Oliver Sack
+                        <br>about music in medical treatment</p>
+                    <a href="https://ccrma.stanford.edu/guest-lectures" target="_blank">Read more</a>
+                </div>
+
             </section>
 
             <section id="curriculum" class="flex-container">
@@ -175,6 +219,35 @@
 
             </section>
 
+            <section id="curriculum-mobile" class="flex-container">
+                <h2>Start learning</h2>
+                <div>
+                    <a href="https://web.stanford.edu/class/cs142/" target="_blank">
+                        <p>Software Engineering</p>
+                    </a>
+
+                    <a href="https://web.stanford.edu/class/cs248/index.html" target="_blank">
+                        <p>Computer Art</p>
+                    </a>
+
+                    <a href="https://ux.stanford.edu/" target="_blank">
+                        <p>Design</p>
+                    </a>
+
+                    <a href="http://web.stanford.edu/class/stats101/" target="_blank">
+                        <p>Data</p>
+                    </a>
+
+                    <a href="https://www.gsb.stanford.edu/" target="_blank">
+                        <p>Business</p>
+                    </a>
+
+                    <a href="https://www.gsb.stanford.edu/insights/marketing" target="_blank">
+                        <p>Marketing</p>
+                    </a>
+                </div>
+            </section>
+
             <section id="thesis" class="flex-container">
                 <h2 class="section-heading">Thesis Exhibit</h2>
                 <div class="video-container">
@@ -190,8 +263,10 @@
                     <div class="horizontal-tile-small">
                         <img src="./resources/images/thesis-fisma.jpg " alt="Fisma" />
                         <div>
-                            <h2>Fisma: Design and<br>Prototype</h2>
-                            <h2>Designer showcase of new<br>prototype product</h2>
+                            <h2>Fisma: Design and
+                                <br>Prototype</h2>
+                            <h2>Designer showcase of new
+                                <br>prototype product</h2>
                         </div>
                     </div>
                     <div class="horizontal-tile-small ">
@@ -209,6 +284,16 @@
                             <p>Research study about New York</p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section id="thesis-mobile" class="flex-container">
+                <h2>Thesis Exhibits</h2>
+                <div class="video-container">
+                    <video autoplay loop muted style="width: 100%; height: 100%; ">
+                        <source id="mp4-mobile" src="./resources/videos/thesis.mp4">
+                        <p>Your user agent does not support the HTML 5 video element.</p>
+                    </video>
                 </div>
             </section>
 
@@ -235,12 +320,18 @@
             </div>
 
             <footer class="flex-container">
-                <h2 class="copyright-notice "><span>&copy; </span>2018 Colmar Academy. All rights reserved</h2>
+                <h2 class="copyright-notice ">
+                    <span>&copy; </span>2018 Colmar Academy. All rights reserved</h2>
                 <div class="navbar ">
                     <a href="#" target="_blank">Terms</a>
                     <a href="#" target="_blank">Privacy</a>
                 </div>
             </footer>
+
+            <div id="footer-mobile" class="flex-container">
+                <h2 class="copyright-notice">
+                    <span>&copy; </span>2018 Colmar Academy. All rights reserved</h2>
+            </div>
 
         </div>
     </div>
