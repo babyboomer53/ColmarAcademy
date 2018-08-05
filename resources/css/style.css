@@ -602,8 +602,12 @@ section {
 
 @media only screen and (max-width: 480px) {
     html {
-        color: gray;
+        color: var(--ColmarGreen);
         background-color: white;
+    }
+    section {
+        margin-bottom: 0 !Important;
+        border-bottom: 1px Solid Skyblue;
     }
     #video-container {
         display: none;
@@ -614,7 +618,6 @@ section {
 
     .flex-container {
         display: flex;
-
         width: 100%;
         flex-wrap: wrap;
         /*overflow: hidden;*/
@@ -622,7 +625,6 @@ section {
 
     #banner,
     section {
-
         background-color: Beige;
         box-shadow: none;
         border-radius: 0px;
@@ -685,14 +687,14 @@ section {
     #general-info-mobile {
         display: flex;
         width: 100%;
-
+        padding-top: 1rem;
     }
     #general-info-mobile img {
         width: 100%;
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    
+
     #general-info-mobile div {
         margin-left: 2rem;
         margin-top: 1rem;
@@ -705,6 +707,9 @@ section {
     #general-info-mobile div p {
         margin-bottom: 1rem;
     }
+    #general-info-mobile div:nth-child(n) {
+        margin-bottom: 4rem;
+    }
     #general-info-mobile div h2:nth-child(2) {
         margin-bottom: 1rem;
     }
@@ -716,12 +721,17 @@ section {
         color: red;
         font-weight: bold;
     }
+    #general-info-mobile div:nth-child(1) a {
+        color: red;
+        font-weight: bold;
+    }
     #curriculum {
         display: none;
     }
     #curriculum-mobile {
         display: flex;
         flex-direction: column;
+        padding-top: 1rem;
         padding-bottom: 1rem;
     }
     #curriculum-mobile h2 {
@@ -790,7 +800,6 @@ section {
         padding: 0;
         margin: 0;
     }
-
     #footer-mobile .copyright-notice span {
         font-family: Helvetica, Arial;
     }
