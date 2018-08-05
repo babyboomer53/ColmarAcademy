@@ -394,6 +394,10 @@ a {
     margin-top: 48px;
 }
 
+#curriculum-mobile {
+    display: none;
+}
+
 #thesis {
     Display: block;
     padding-top: 0;
@@ -451,6 +455,10 @@ a {
     margin-left: 1.5rem;
 }
 
+#thesis-mobile {
+    display: none;
+}
+
 footer h2 {
     margin-left: 1.5rem;
 }
@@ -478,6 +486,10 @@ section {
 footer {
     font-family: 'Ringbearer Medium', "Graduate Regular";
     justify-content: space-between;
+}
+
+#footer-mobile {
+    display: none;
 }
 
 #countdown-timer {
@@ -680,6 +692,11 @@ section {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    
+    #general-info-mobile div {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
     #general-info-mobile h2:nth-child(Odd) {
         font-size: 2rem;
         font-weight: bold;
@@ -735,6 +752,7 @@ section {
         display: none;
     }
     #thesis-mobile {
+        display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
@@ -755,6 +773,7 @@ section {
         display: none !Important;
     }
     #footer-mobile {
+        display: flex;
         position: fixed;
         left: 0;
         bottom: 0;
