@@ -73,13 +73,11 @@ a {
 }
 
 #navbar {
-    /*display: none;*/
     width: auto !important;
     justify-content: space-between;
     height: 90px;
     background: linear-gradient(to Right, var(--BrickRed), Black);
     z-index: 10;
-    border-radius: 6px;
 }
 
 #navbar img {
@@ -142,7 +140,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin-right: 1.5em;
 }
 
 #banner-content p {
@@ -164,7 +161,7 @@ a {
     justify-content: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background: linear-gradient(to Bottom, Lightgreen, Green, Black, Lightgreen);
+    background: linear-gradient(to Right, Black, var(--ColmarGreen), Black);
     border-radius: 6px;
     margin: 0;
     color: beige;
@@ -502,12 +499,11 @@ footer {
     color: Black;
     background-color: var(--OldBrickRed);
     background-color: Beige;
-    border: 4px solid Blue;
+    background: linear-gradient(to right, black, gray, lightgray, gray, black);
     font-weight: 600;
     padding-bottom: 10px;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 2px 2px 8px 2px black;
-    opacity: 1;
     padding: 8px;
     transition: opacity 5000ms;
 }
@@ -516,15 +512,14 @@ footer {
     position: absolute;
     right: 5px;
     top: 5px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.5;
-    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    opacity: 0.3;
+    border-radius: 50%;
 }
 
 #countdown-timer #close-button:hover {
-    opacity: 1;
-    background: Red;
+    opacity: 0.8;
 }
 
 #countdown-timer #close-button:before,
@@ -534,7 +529,7 @@ footer {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: black;
+    background-color: White;
 }
 
 #countdown-timer #close-button:before {
