@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="27px"
+   height="27px"
+   viewBox="0 0 27 27"
+   version="1.1"
+   id="svg27"
+   sodipodi:docname="ic-on-campus-beige.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata31">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>ic_onCampus</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     id="namedview29"
+     showgrid="false"
+     inkscape:zoom="8.7407407"
+     inkscape:cx="13.5"
+     inkscape:cy="13.5"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg27" />
+  <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">ic_onCampus</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs19">
+    <filter
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%"
+       filterUnits="objectBoundingBox"
+       id="filter-1">
+      <feOffset
+         dx="0"
+         dy="2"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset6" />
+      <feGaussianBlur
+         stdDeviation="2"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur8" />
+      <feColorMatrix
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"
+         type="matrix"
+         in="shadowBlurOuter1"
+         result="shadowMatrixOuter1"
+         id="feColorMatrix10" />
+      <feMerge
+         id="feMerge16">
+        <feMergeNode
+           in="shadowMatrixOuter1"
+           id="feMergeNode12" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode14" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g
+     id="OPt-2"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="prog2_pro3_Mobile-Portrait_opt2-Copy-2"
+       transform="translate(-93.000000, -18.000000)"
+       fill="#000000">
+      <g
+         id="nav">
+        <g
+           id="Group-6"
+           filter="url(#filter-1)">
+          <g
+             id="ic_onCampus"
+             transform="translate(96.000000, 20.000000)">
+            <path
+               d="M20,2 L20,4 L15,4 L11.53,9 L14,9 L14,11 L12.46,11 L16.17,19 L13.97,19 L13.04,17 L4.38,17 L3.35,19 L1.1,19 L5.23,11 L5,11 C4.55,11 4.17,10.7 4.04,10.3 L0.87,0.84 L1.82,0.5 C2.34,0.34 2.91,0.63 3.08,1.15 L5.72,9 L10.1,9 L13.57,4 L10,4 L10,2 L20,2 L20,2 Z M7.5,11 L5.42,15 L12.11,15 L10.26,11 L7.5,11 Z"
+               id="Shape" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path
+     style="fill:#f5f5dc;fill-opacity:1;stroke-width:0.11440678"
+     d="m 4.2559322,20.8713 c 0,-0.02324 0.9001786,-1.786538 2.0003969,-3.918432 1.1002185,-2.131895 2.0011719,-3.914785 2.0021187,-3.961978 9.469e-4,-0.04719 -0.1437533,-0.08581 -0.3215559,-0.08581 -0.1911113,0 -0.4262123,-0.109569 -0.575055,-0.268005 C 7.1967808,12.461386 6.5645148,10.733484 5.5261787,7.6204627 L 3.9422977,2.87185 4.470937,2.6823931 C 5.7109134,2.2380027 5.7023949,2.2250606 7.3214615,7.0131356 l 1.3540155,4.0042374 2.225192,0.03093 2.225192,0.03093 1.7144,-2.4789194 c 0.94292,-1.3634056 1.731561,-2.5228222 1.752535,-2.5764814 0.02098,-0.053659 -0.764141,-0.097562 -1.744703,-0.097562 H 13.065254 V 5.0110169 4.0957627 h 4.919492 4.919491 v 0.9130231 0.913023 l -2.478343,0.030833 -2.478344,0.030833 -1.697504,2.4366808 c -0.933627,1.3401745 -1.697504,2.4856724 -1.697504,2.5455504 0,0.06198 0.517424,0.10887 1.201272,0.10887 h 1.201271 v 0.915255 0.915254 h -0.743644 c -0.447425,0 -0.743644,0.04829 -0.743644,0.121238 0,0.06668 0.797987,1.843878 1.773305,3.949329 0.975317,2.105449 1.773305,3.852799 1.773305,3.882999 0,0.0302 -0.457139,0.05491 -1.015864,0.05491 H 16.98268 L 16.544705,19.941102 16.106731,18.968644 H 11.735088 7.3634454 L 6.8333583,19.941102 6.3032712,20.913559 H 5.2796017 c -0.5630182,0 -1.0236695,-0.01902 -1.0236695,-0.04226 z M 15.124576,16.958261 c 0,-0.03601 -0.410612,-0.949833 -0.912471,-2.030721 l -0.912471,-1.965252 -1.406694,-0.03182 -1.406694,-0.03183 -1.0645764,2.062545 -1.0645765,2.062545 h 3.3837419 c 1.861058,0 3.383741,-0.02946 3.383741,-0.06547 z"
+     id="path3871"
+     inkscape:connector-curvature="0" />
+</svg>
