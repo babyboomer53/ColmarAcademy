@@ -257,12 +257,12 @@ a {
 
 .horizontal-tile-small:nth-child(Odd) {
     color: White;
-    background: linear-gradient(To Right, Black, var(--ColmarGreen), Beige);
+    background: linear-gradient(To Right, var(--ColmarGreen), Beige);
 }
 
 .horizontal-tile-small:nth-child(Even) {
     color: Beige;
-    background: linear-gradient(To Left, Black, var(--BrickRed), Beige);
+    background: linear-gradient(To Left, var(--BrickRed), Beige);
 }
 
 .horizontal-tile-small img {
