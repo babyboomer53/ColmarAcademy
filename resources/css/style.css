@@ -61,18 +61,14 @@ a {
     align-items: center;
 }
 
-#video-container {
+.video #video-container.background {
     z-index: -1;
     height: 100%;
     position: fixed;
     width: 100%;
 }
 
-.no-video div.video {
-    display: none;
-}
-
-#video-container video {
+.video video.background {
     width: 100%;
     height: auto;
     min-width: 100%;
@@ -82,11 +78,7 @@ a {
     z-index: -1;
 }
 
-.no-video video.video {
-    display: none;
-}
-
-.no-video body.video {
+.no-video body.background {
     background: url('../../resources/images/background-image.png');
     background-position: center;
     background-repeat: no-repeat;
