@@ -10,14 +10,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css" />
 </head>
 
-<body>
+<body class="video">
 
     <div id="parent-container">
 
         <div id="content-container">
 
-            <div id="video-container" style="z-index: -1; height: 100%; position: fixed; width: 100%">
-                <video autoplay muted style="width:100% ; height: auto; min-width:100%; min-height:100%; object-fit: cover; position:absolute; z-index: -1">
+            <div id="video-container" class="video">
+                <video autoplay muted class="video">
                     <source id="mp4" src="./resources/videos/ColmarAcademy.mp4" type="video/mp4"> Your user agent does not support the HTML 5 video element.
                 </video>
                 <div id="diffuser"></div>
@@ -370,6 +370,7 @@
     <script src="./resources/scripts/scroll.js"></script>
     <!-- <script src="./resources/scripts/sticky.js "></script> -->
     <script src="./resources/scripts/countdown.js"></script>
+    <script src="./resources/scripts/modernizr-custom.js"></script>
 </body>
 
 </html>
