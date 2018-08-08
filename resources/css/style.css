@@ -544,6 +544,7 @@ footer {
 
 .close-button:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .close-button:before,
@@ -604,10 +605,6 @@ footer {
     opacity: 0;
 }
 
-#countdown-timer .close-button:hover {
-    cursor: pointer;
-}
-
 .menu-container {
     position: fixed;
     top: 50%;
@@ -624,15 +621,17 @@ footer {
     width: 250px;
     height: 250px;
     text-decoration: none;
-    color: beige;
+    color: silver!Important;
     background-color: black;
     font-size: 1.5rem;
     text-align: center;
+    border: 2px solid silver;
+    border-radius: 4px;
 }
 
 #context-menu a {
     text-decoration: none;
-    color: beige;
+    color: Silver;
 }
 
 footer {
