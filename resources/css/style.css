@@ -100,7 +100,7 @@ a {
 #navbar {
     width: auto !important;
     justify-content: space-between;
-    background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), var(--BrickRed), Black, rgba(0, 0, 0, 0.0));
+    background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), var(--BrickRed), Black);
     z-index: 10;
 }
 
@@ -113,7 +113,7 @@ a {
     position: relative;
     align-items: center;
     margin-left: 1.5rem;
-    background-color: var(--ColmarGreen);
+    background-color: var(--ColmarGreen); 
 }
 
 #logo .shadow {
