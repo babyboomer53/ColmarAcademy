@@ -111,10 +111,10 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(132, 31, 39, 0.0)), color-stop(var(--BrickRed)), to(Black));
-    background: -webkit-linear-gradient(left, rgba(132, 31, 39, 0.0), var(--BrickRed), Black);
-    background: -o-linear-gradient(left, rgba(132, 31, 39, 0.0), var(--BrickRed), Black);
-    background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), var(--BrickRed), Black);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(132, 31, 39, 0.0)), to(var(--OldBrickRed)));
+    background: -webkit-linear-gradient(left, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
+    background: -o-linear-gradient(left, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
+    background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
     z-index: 10;
 }
 
@@ -218,7 +218,7 @@ a {
     background: -webkit-linear-gradient(left, Black, var(--ColmarGreen), Black);
     background: -o-linear-gradient(left, Black, var(--ColmarGreen), Black);
     background: linear-gradient(to Right, Black, var(--ColmarGreen), Black);
-    border-radius: 6px;
+    border-radius: 4px;
     margin: 0;
     color: beige;
     border: none;
@@ -714,7 +714,7 @@ footer {
     padding: 1rem 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     html {
         color: var(--ColmarGreen);
         background-color: white;
