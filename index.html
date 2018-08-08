@@ -7,7 +7,7 @@
     <title>Colmar Academy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style-dist.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css" />
 </head>
 
 <body class="background">
@@ -298,8 +298,8 @@
 
             <div class="countdown-container">
                 <div id="countdown-timer">
-                    <!--<button onClick="hide('countdown-timer')" id="close-button" type="button">X</button>-->
-                    <div onClick="hide('countdown-timer')" id="close-button"></div>
+                    <!--<button onClick="hide('countdown-timer')" class="close-button" type="button">X</button>-->
+                    <div onClick="hide('countdown-timer')" class="close-button"></div>
                     <h1 style="text-align: center; margin-bottom: 0;">Time left until next orientation</h1>
                     <div class="headings">
                         <h2>Days</h2>
@@ -313,6 +313,17 @@
                         <div data-minutes="2018/10/11 00:00:01"></div>
                         <div data-seconds="2018/10/11 00:00:01"></div>
                     </div>
+                </div>
+            </div>
+
+            <div class="menu-container">
+                
+                <div id="context-menu">
+                        <div onClick="hide('context-menu')" class="close-button"></div>
+                    <a href="#banner" class="scroll">Banner</a>
+                    <a href="#general-info" class="scroll">General Information</a>
+                    <a href="#curriculum" class="scroll">Curriculum</a>
+                    <a href="#thesis" class="scroll">Thesis Exhibit</a>
                 </div>
             </div>
 
@@ -333,9 +344,12 @@
         </div>
     </div>
 
+    <div onclick="show('context-menu')" style="position: fixed; left: 0; bottom: 0; width: 100px; height: 100px;" class="change-cursor"></div>
+    <div onclick="show('context-menu')" style="position: fixed; right: 0; bottom: 0; width: 100px; height: 100px;" class="change-cursor"></div>
+
     <script>
         function show(id) {
-            document.getElementById(id).style.display = "block";
+            document.getElementById(id).style.display = "flex";
             document.getElementById(id).style.transition = "none";
             document.getElementById(id).style.opacity = "1";
         }
