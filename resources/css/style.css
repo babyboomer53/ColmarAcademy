@@ -51,13 +51,19 @@ a {
     position: fixed;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -73,6 +79,7 @@ a {
     height: auto;
     min-width: 100%;
     min-height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     position: absolute;
     z-index: -1;
@@ -94,12 +101,19 @@ a {
     background-color: Gray;
     opacity: 0;
     z-index: 10;
+    -webkit-transition: opacity 5000ms;
+    -o-transition: opacity 5000ms;
     transition: opacity 5000ms;
 }
 
 #navbar {
     width: auto !important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(132, 31, 39, 0.0)), to(var(--OldBrickRed)));
+    background: -webkit-linear-gradient(left, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
+    background: -o-linear-gradient(left, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
     background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
     z-index: 10;
 }
@@ -109,8 +123,12 @@ a {
 }
 
 #logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 1.5rem;
     background-color: var(--ColmarGreen);
@@ -133,7 +151,11 @@ a {
     font-size: 1.75rem;
     font-family: 'Ringbearer Medium', "Graduate Regular";
     font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 15px 8px;
     margin-right: 5px;
@@ -158,7 +180,12 @@ a {
 }
 
 #banner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 40%;
     margin-right: 1.5rem;
@@ -179,10 +206,17 @@ a {
 }
 
 #banner #start-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 1rem;
     font-size: 1.5rem;
+    background: -webkit-gradient(linear, left top, right top, from(Black), color-stop(var(--ColmarGreen)), to(Black));
+    background: -webkit-linear-gradient(left, Black, var(--ColmarGreen), Black);
+    background: -o-linear-gradient(left, Black, var(--ColmarGreen), Black);
     background: linear-gradient(to Right, Black, var(--ColmarGreen), Black);
     border-radius: 4px;
     margin: 0;
@@ -221,6 +255,8 @@ a {
 }
 
 #general-info {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     color: gray;
     background-color: Beige;
@@ -263,7 +299,12 @@ a {
 }
 
 #general-info .small-tile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 40%;
     margin-left: 1.5rem;
@@ -271,18 +312,28 @@ a {
 }
 
 .horizontal-tile-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 1rem;
 }
 
 .horizontal-tile-small:nth-child(Odd) {
     color: Black;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(Right, To), color-stop(var(--ColmarGreen)), to(Beige));
+    background: -webkit-linear-gradient(To Right, var(--ColmarGreen), Beige);
+    background: -o-linear-gradient(To Right, var(--ColmarGreen), Beige);
     background: linear-gradient(To Right, var(--ColmarGreen), Beige);
 }
 
 .horizontal-tile-small:nth-child(Even) {
     color: Beige;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(Left, To), color-stop(var(--BrickRed)), to(Beige));
+    background: -webkit-linear-gradient(To Left, var(--BrickRed), Beige);
+    background: -o-linear-gradient(To Left, var(--BrickRed), Beige);
     background: linear-gradient(To Left, var(--BrickRed), Beige);
 }
 
@@ -332,7 +383,10 @@ a {
 }
 
 #curriculum {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -354,6 +408,9 @@ a {
 
 #curriculum a div:nth-child(1):hover {
     color: black !Important;
+    background: -webkit-gradient(linear, left top, right top, from(White), to(White)) !Important;
+    background: -webkit-linear-gradient(left, White, White) !Important;
+    background: -o-linear-gradient(left, White, White) !Important;
     background: linear-gradient(to right, White, White) !Important;
 }
 
@@ -377,6 +434,7 @@ a {
     height: 100%;
     border-radius: 6px;
     /*box-shadow: inset 5px 5px 15px 10px rgba(0, 0, 0, 0.70);*/
+    -webkit-box-shadow: inset 6px 6px 10px 7px rgba(0, 0, 0, 0.70);
     box-shadow: inset 6px 6px 10px 7px rgba(0, 0, 0, 0.70);
 }
 
@@ -402,11 +460,17 @@ a {
 
 #curriculum a:nth-child(Odd) div:nth-child(1) {
     color: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--OldBrickRed)), color-stop(var(--OldBrickRed)), to(Pink));
+    background: -webkit-linear-gradient(top, var(--OldBrickRed), var(--OldBrickRed), Pink);
+    background: -o-linear-gradient(top, var(--OldBrickRed), var(--OldBrickRed), Pink);
     background: linear-gradient(to bottom, var(--OldBrickRed), var(--OldBrickRed), Pink);
 }
 
 #curriculum a:nth-child(Even) div:nth-child(1) {
     color: White;
+    background: -webkit-gradient(linear, left top, left bottom, from(Black), color-stop(Black), to(Lightgray));
+    background: -webkit-linear-gradient(top, Black, Black, Lightgray);
+    background: -o-linear-gradient(top, Black, Black, Lightgray);
     background: linear-gradient(to bottom, Black, Black, Lightgray);
 }
 
@@ -421,6 +485,8 @@ a {
 #thesis {
     Display: block;
     padding-top: 0;
+    -webkit-box-pack: Space-between;
+    -ms-flex-pack: Space-between;
     justify-content: Space-between;
     color: Gray;
     background-color: Beige;
@@ -470,6 +536,9 @@ a {
 #thesis .tile-container {
     display: Inline-flex;
     overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 40%;
     margin-left: 1.5rem;
@@ -505,6 +574,8 @@ section {
 
 footer {
     font-family: 'Ringbearer Medium', "Graduate Regular";
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -513,22 +584,35 @@ footer {
 }
 
 #countdown-timer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 500px;
     margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: Black;
     background-color: var(--OldBrickRed);
     background-color: Beige;
+    background: -webkit-gradient(linear, left top, right top, from(black), color-stop(gray), color-stop(lightgray), color-stop(gray), to(black));
+    background: -webkit-linear-gradient(left, black, gray, lightgray, gray, black);
+    background: -o-linear-gradient(left, black, gray, lightgray, gray, black);
     background: linear-gradient(to right, black, gray, lightgray, gray, black);
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 6px;
+    -webkit-box-shadow: 2px 2px 8px 2px black;
     box-shadow: 2px 2px 8px 2px black;
     /* Note: Regarding the box-shadow property, in Safari (on PC) the color parameter is required. If you do not specify the color, the shadow is not displayed at all. */
     padding: 8px;
+    -webkit-transition: opacity 5000ms;
+    -o-transition: opacity 5000ms;
     transition: opacity 5000ms;
 }
 
@@ -558,15 +642,22 @@ footer {
 }
 
 .close-button:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .close-button:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
 .headings {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -582,7 +673,10 @@ footer {
 }
 
 #countdown-timer .data {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     font-family: 'lcd standard';
     font-weight: bold;
@@ -597,6 +691,7 @@ footer {
     line-height: 40px;
     Color: Black;
     background-color: Lightgray;
+    -webkit-box-shadow: inset 3px 3px 7px 2px Black;
     box-shadow: inset 3px 3px 7px 2px Black;
     border-radius: 4px;
 }
@@ -609,29 +704,36 @@ footer {
     position: fixed;
     top: 50%;
     left: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 #context-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     background: black;
     opacity: 0.6!Important;
     width: 250px;
     height: 250px;
     text-decoration: none;
-    color: silver!Important;
     background-color: black;
     font-size: 1.5rem;
     text-align: center;
-    border: 2px solid silver;
+    /*border: 2px solid silver;*/
     border-radius: 4px;
 }
 
 #context-menu a {
     text-decoration: none;
-    color: Silver;
+    color: Beige;
 }
 
 footer {
@@ -658,25 +760,35 @@ footer {
         display: none;
     }
     .flex-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         /*overflow: hidden;*/
     }
     #banner,
     section {
         background-color: Beige;
+        -webkit-box-shadow: none;
         box-shadow: none;
         border-radius: 0px;
     }
     .mobile-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         position: fixed;
         left: 0;
         top: 0;
         Width: 100%;
         padding-top: 0.625rem;
+        background: -webkit-gradient(linear, left top, right top, from(Black), color-stop(var(--BrickRed)), to(Black));
+        background: -webkit-linear-gradient(left, Black, var(--BrickRed), Black);
+        background: -o-linear-gradient(left, Black, var(--BrickRed), Black);
         background: linear-gradient(to right, Black, var(--BrickRed), Black);
     }
     .mobile-header img {
@@ -702,6 +814,9 @@ footer {
     }
     #banner #start-button {
         margin: 0 1rem;
+        background: -webkit-gradient(linear, left top, right top, from(Black), color-stop(var(--ColmarGreen)), to(Black));
+        background: -webkit-linear-gradient(left, Black, var(--ColmarGreen), Black);
+        background: -o-linear-gradient(left, Black, var(--ColmarGreen), Black);
         background: linear-gradient(to right, Black, var(--ColmarGreen), Black);
     }
     #banner-content {
@@ -723,6 +838,8 @@ footer {
         display: none;
     }
     #general-info-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         padding-top: 1rem;
@@ -765,7 +882,12 @@ footer {
         display: none;
     }
     #curriculum-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -785,10 +907,16 @@ footer {
     }
     #curriculum-mobile div a:nth-child(Odd) p {
         color: Beige;
+        background: -webkit-gradient(linear, left top, right top, from(var(--ColmarGreen)), color-stop(var(--ColmarGreen)), to(beige));
+        background: -webkit-linear-gradient(left, var(--ColmarGreen), var(--ColmarGreen), beige);
+        background: -o-linear-gradient(left, var(--ColmarGreen), var(--ColmarGreen), beige);
         background: linear-gradient(to right, var(--ColmarGreen), var(--ColmarGreen), beige);
     }
     #curriculum-mobile div a:nth-child(Even) p {
         color: Beige;
+        background: -webkit-gradient(linear, right top, left top, from(var(--BrickRed)), color-stop(var(--BrickRed)), to(beige));
+        background: -webkit-linear-gradient(right, var(--BrickRed), var(--BrickRed), beige);
+        background: -o-linear-gradient(right, var(--BrickRed), var(--BrickRed), beige);
         background: linear-gradient(to Left, var(--BrickRed), var(--BrickRed), beige);
     }
     #curriculum-mobile div a {
@@ -798,9 +926,16 @@ footer {
         display: none;
     }
     #thesis-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         font-size: 2rem;
     }
@@ -819,6 +954,8 @@ footer {
         display: none !Important;
     }
     #footer-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: fixed;
         left: 0;
