@@ -131,7 +131,7 @@ a {
     -ms-flex-align: center;
     align-items: center;
     margin-left: 1.5rem;
-    background-color: var(--ColmarGreen); 
+    background-color: var(--ColmarGreen);
 }
 
 #logo .shadow {
@@ -260,7 +260,6 @@ a {
     justify-content: flex-start;
     color: gray;
     background-color: Beige;
-    
 }
 
 #general-info .vertical-tile-large {
@@ -310,7 +309,6 @@ a {
     width: 40%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    
 }
 
 .horizontal-tile-small {
@@ -546,10 +544,6 @@ a {
     margin-left: 1.5rem;
 }
 
-#thesis .horizontal-tile-small {
-    
-}
-
 #thesis-mobile {
     display: none;
 }
@@ -622,7 +616,7 @@ footer {
     transition: opacity 5000ms;
 }
 
-#countdown-timer #close-button {
+.close-button {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -632,12 +626,13 @@ footer {
     border-radius: 50%;
 }
 
-#countdown-timer #close-button:hover {
+.close-button:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
-#countdown-timer #close-button:before,
-#countdown-timer #close-button:after {
+.close-button:before,
+.close-button:after {
     position: absolute;
     left: 15px;
     content: ' ';
@@ -646,19 +641,19 @@ footer {
     background-color: White;
 }
 
-#countdown-timer #close-button:before {
+.close-button:before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-#countdown-timer #close-button:after {
+.close-button:after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#countdown-timer .headings {
+.headings {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -705,8 +700,41 @@ footer {
     opacity: 0;
 }
 
-#countdown-timer #close-button:hover {
-    cursor: pointer;
+.menu-container {
+    position: fixed;
+    top: 50%;
+    left: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#context-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background: black;
+    opacity: 0.6!Important;
+    width: 250px;
+    height: 250px;
+    text-decoration: none;
+    color: silver!Important;
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid silver;
+    border-radius: 4px;
+}
+
+#context-menu a {
+    text-decoration: none;
+    color: Silver;
 }
 
 footer {
@@ -715,6 +743,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .context-menu {
+        display: none;
+    }
     html {
         color: var(--ColmarGreen);
         background-color: white;
@@ -946,4 +977,7 @@ footer {
     #footer-mobile .copyright-notice span {
         font-family: Helvetica, Arial;
     }
+}
+.change-cursor {
+    cursor: pointer;
 }
