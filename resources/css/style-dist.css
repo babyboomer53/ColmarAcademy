@@ -794,9 +794,7 @@ footer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        
         -ms-flex-pack: distribute;
-        
         justify-content: space-around;
         position: fixed;
         left: 0;
@@ -811,9 +809,6 @@ footer {
     .mobile-header img {
         width: Auto;
         height: auto;
-    }
-    #top-of-page {
-        height: 44.5px !Important;
     }
     #navbar {
         display: none;
@@ -995,6 +990,9 @@ footer {
     }
     .spacer {
         display: none;
+    }
+    .mobile-spacer {
+        display: block!Important;
     }
 }
 

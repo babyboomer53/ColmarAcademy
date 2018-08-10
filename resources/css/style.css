@@ -55,8 +55,6 @@ a {
 }
 
 .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 1200px;
     margin: 0 auto;
@@ -101,8 +99,6 @@ a {
 
 #navbar {
     width: auto !important;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
     z-index: 10;
@@ -139,8 +135,6 @@ a {
     font-size: 1.75rem;
     font-family: 'Ringbearer Medium', "Graduate Regular";
     font-weight: 700;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     align-items: center;
     padding: 15px 8px;
@@ -187,8 +181,6 @@ a {
 }
 
 #banner #start-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -522,8 +514,6 @@ footer {
 }
 
 #countdown-timer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 500px;
@@ -577,8 +567,6 @@ footer {
 }
 
 .headings {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
 }
@@ -627,8 +615,6 @@ footer {
 
 #context-menu {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: Center;
@@ -684,8 +670,6 @@ footer {
         display: none;
     }
     .flex-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         width: 100%;
         -ms-flex-wrap: wrap;
@@ -700,7 +684,6 @@ footer {
     }
     .mobile-header {
         display: flex;
-        
         justify-content: space-around;
         position: fixed;
         left: 0;
@@ -712,9 +695,6 @@ footer {
     .mobile-header img {
         width: Auto;
         height: auto;
-    }
-    #top-of-page {
-        height: 44.5px !Important;
     }
     #navbar {
         display: none;
@@ -871,6 +851,9 @@ footer {
     }
     .spacer {
         display: none;
+    }
+    .mobile-spacer {
+        display: block!Important;
     }
 }
 
