@@ -635,7 +635,6 @@ footer {
     background: black;
     opacity: 0.6 !Important;
     height: 275px;
-    
     text-decoration: none;
     background-color: black;
     font-size: 1.5rem;
@@ -658,7 +657,6 @@ footer {
 
 #context-menu a:hover {
     color: Black;
-    font-weight: bold;
     background-color: Gray;
 }
 
@@ -871,8 +869,12 @@ footer {
     #footer-mobile .copyright-notice span {
         font-family: Helvetica, Arial;
     }
+    .spacer {
+        display: none;
+    }
 }
 
 .change-cursor {
     cursor: pointer;
 }
+
