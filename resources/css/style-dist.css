@@ -233,21 +233,21 @@ a {
     cursor: pointer;
 }
 
-.horizontal-tile-large img {
+.large-horizontal-content-container img {
     width: 60%;
     Margin-right: 2rem;
     Float: left;
     padding: 32px 24px;
 }
 
-.horizontal-tile-large p:nth-child(1) {
+.large-horizontal-content-container p:nth-child(1) {
     font-family: 'Graduate Regular', Helvetica, Arial;
     Color: var(--OldBrickRed);
     font-size: 2rem;
     Font-weight: 700;
 }
 
-.horizontal-tile-large p:nth-child(2) {
+.large-horizontal-content-container p:nth-child(2) {
     font-family: Times, Arial;
     Color: gray;
     font-size: 2rem;
@@ -262,17 +262,17 @@ a {
     background-color: Beige;
 }
 
-#general-info .vertical-tile-large {
+#general-info .large-vertical-content-container {
     width: 60%;
     padding: 32px 24px;
 }
 
-#general-info .vertical-tile-large img {
+#general-info .large-vertical-content-container img {
     width: 100%;
     height: auto;
 }
 
-#general-info .vertical-tile-large p:nth-child(2) {
+#general-info .large-vertical-content-container p:nth-child(2) {
     color: var(--OldBrickRed);
     font-size: 2.25rem;
     Font-weight: 700;
@@ -281,7 +281,7 @@ a {
     font-family: 'Graduate Regular', Helvetica, Arial;
 }
 
-#general-info .vertical-tile-large p:nth-child(3) {
+#general-info .large-vertical-content-container p:nth-child(3) {
     font-family: Times, script;
     font-style: italic;
     Color: Inherit;
@@ -290,7 +290,7 @@ a {
     margin-bottom: 32px;
 }
 
-#general-info .vertical-tile-large p:nth-child(4) {
+#general-info .large-vertical-content-container p:nth-child(4) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1rem;
@@ -311,7 +311,7 @@ a {
     margin-right: 1.5rem;
 }
 
-.horizontal-tile-small {
+.small-horizontal-content-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -321,7 +321,7 @@ a {
     padding: 1rem;
 }
 
-.horizontal-tile-small:nth-child(Odd) {
+.small-horizontal-content-container:nth-child(Odd) {
     color: Black;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(Right, To), color-stop(var(--ColmarGreen)), to(Beige));
     background: -webkit-linear-gradient(To Right, var(--ColmarGreen), Beige);
@@ -329,7 +329,7 @@ a {
     background: linear-gradient(To Right, var(--ColmarGreen), Beige);
 }
 
-.horizontal-tile-small:nth-child(Even) {
+.small-horizontal-content-container:nth-child(Even) {
     color: Beige;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(Left, To), color-stop(var(--BrickRed)), to(Beige));
     background: -webkit-linear-gradient(To Left, var(--BrickRed), Beige);
@@ -337,34 +337,34 @@ a {
     background: linear-gradient(To Left, var(--BrickRed), Beige);
 }
 
-.horizontal-tile-small img {
+.small-horizontal-content-container img {
     Width: 35%;
     Height: auto;
     float: left;
     margin-right: 1rem;
 }
 
-.horizontal-tile-small a {
+.small-horizontal-content-container a {
     font-size: 1.25rem;
     font-weight: 700;
     color: Yellow;
 }
 
-.horizontal-tile-small a,
-.horizontal-tile-small p,
-.horizontal-tile-small h2 {
+.small-horizontal-content-container a,
+.small-horizontal-content-container p,
+.small-horizontal-content-container h2 {
     margin: 8px 0;
 }
 
-.horizontal-tile-small h2:nth-child(1) {
+.small-horizontal-content-container h2:nth-child(1) {
     font-size: 2rem;
 }
 
-.horizontal-tile-small h2:nth-child(2) {
+.small-horizontal-content-container h2:nth-child(2) {
     font-size: 1rem;
 }
 
-#general-info .horizontal-tile-small:nth-child(1) h2:nth-child(2):hover {
+#general-info .small-horizontal-content-container:nth-child(1) h2:nth-child(2):hover {
     cursor: pointer;
     color: Yellow;
 }
@@ -397,7 +397,7 @@ a {
     border-radius: 6px;
 }
 
-#curriculum .vertical-tile-small {
+#curriculum .small-vertical-content-container {
     position: relative;
     width: 100%;
     font-family: Helvetica, Arial;
@@ -414,19 +414,19 @@ a {
     background: linear-gradient(to right, White, White) !Important;
 }
 
-.vertical-tile-small img {
+.small-vertical-content-container img {
     width: 100%;
     height: auto;
     z-index: -2;
     border-radius: 6px 6px 0 0;
 }
 
-.vertical-tile-small .course-detail {
+.small-vertical-content-container .course-detail {
     height: 185px;
     margin-left: 1rem;
 }
 
-.vertical-tile-small .shadow {
+.small-vertical-content-container .shadow {
     position: Absolute;
     left: 0;
     top: 0;
@@ -437,20 +437,20 @@ a {
     box-shadow: inset 6px 6px 10px 7px rgba(0, 0, 0, 0.70);
 }
 
-#curriculum .vertical-tile-small p:nth-child(1) {
+#curriculum .small-vertical-content-container p:nth-child(1) {
     font-size: 2rem;
     Font-weight: 700;
     margin-top: 16px;
 }
 
-#curriculum .vertical-tile-small p:nth-child(2) {
+#curriculum .small-vertical-content-container p:nth-child(2) {
     font-family: Helvetica, Arial;
     color: Inherit;
     font-size: 1rem;
     margin-top: 16px;
 }
 
-#curriculum .vertical-tile-small p:nth-child(3) {
+#curriculum .small-vertical-content-container p:nth-child(3) {
     font-family: Helvetica, Arial;
     color: Inherit;
     font-size: 1rem;
@@ -518,14 +518,14 @@ a {
     font-style: italic;
 }
 
-#thesis .vertical-tile-large p:nth-child(3) {
+#thesis .large-vertical-content-container p:nth-child(3) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1rem;
     margin-bottom: 32px;
 }
 
-#thesis .vertical-tile-large p:nth-child(4) {
+#thesis .large-vertical-content-container p:nth-child(4) {
     font-family: Helvetica, Arial;
     Color: Inherit;
     font-size: 1rem;
