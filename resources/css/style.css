@@ -264,7 +264,7 @@ a {
     font-style: italic;
 }
 
-#general-info .small-tile-container {
+#general-info .generic-container {
     display: flex;
     flex-direction: column;
     width: 40%;

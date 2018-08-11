@@ -298,7 +298,7 @@ a {
     font-style: italic;
 }
 
-#general-info .small-tile-container {
+#general-info .generic-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
