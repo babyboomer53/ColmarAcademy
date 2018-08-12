@@ -62,9 +62,9 @@ a {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .video #video-container.background {
@@ -130,7 +130,6 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 1.5rem;
     background-color: var(--ColmarGreen);
 }
 
@@ -473,7 +472,7 @@ a {
     background: linear-gradient(to bottom, Black, Black, Lightgray);
 }
 
-#curriculum a:nth-child(n+3) div:nth-child(1) .course-detail p:nth-child(2) {
+#curriculum a:nth-child(n + 3) div:nth-child(1) .course-detail p:nth-child(2) {
     margin-top: 48px;
 }
 
@@ -992,11 +991,10 @@ footer {
         display: none;
     }
     .mobile-spacer {
-        display: block!Important;
+        display: block !Important;
     }
 }
 
 .change-cursor {
     cursor: pointer;
 }
-
