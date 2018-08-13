@@ -114,8 +114,8 @@ a {
     display: flex;
     position: relative;
     align-items: center;
-    margin-left: 1.5rem;
-    background-color: var(--ColmarGreen);
+    /*background-color: var(--ColmarGreen);*/
+    background: linear-gradient(to bottom, aqua, var(--ColmarGreen), black, var(--ColmarGreen));
 }
 
 #logo .shadow {
