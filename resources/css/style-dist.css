@@ -157,7 +157,7 @@ a {
 #logotype h1 {
     width: auto;
     font-size: 1.75rem;
-    font-family: Mael, 'Ringbearer Medium', "Graduate Regular";
+    font-family: 'Ringbearer Medium', Mael, "Graduate Regular";
     font-weight: 700;
     display: -webkit-box;
     display: -ms-flexbox;
