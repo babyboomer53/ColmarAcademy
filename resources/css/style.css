@@ -28,6 +28,11 @@ html {
     src: url(../../resources/fonts/Graduate-Regular.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "Mael";
+    src: url(../../resources/fonts/Mael.ttf) format("truetype");
+}
+
 body {
     margin: 0;
 }
@@ -109,8 +114,6 @@ a {
 }
 
 #logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
     align-items: center;
@@ -133,7 +136,7 @@ a {
 #logotype h1 {
     width: auto;
     font-size: 1.75rem;
-    font-family: 'Ringbearer Medium', "Graduate Regular";
+    font-family: 'Ringbearer Medium', Mael, "Graduate Regular";
     font-weight: 700;
     display: flex;
     align-items: center;
