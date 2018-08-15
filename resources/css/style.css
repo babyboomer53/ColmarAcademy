@@ -63,7 +63,7 @@ a {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-   align-items: center;
+    align-items: center;
 }
 
 .video #video-container.background {
@@ -106,6 +106,7 @@ a {
     width: auto !important;
     justify-content: space-between;
     background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), var(--OldBrickRed));
+    background: linear-gradient(to Right, rgba(132, 31, 39, 0.0), rgba(132, 31, 39, 1));
     z-index: 10;
 }
 
@@ -136,7 +137,7 @@ a {
 #logotype h1 {
     width: auto;
     font-size: 1.75rem;
-    font-family: 'Ringbearer Medium', Mael, "Graduate Regular";
+    font-family: 'Ringbearer Medium', "Graduate Regular";
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -414,7 +415,7 @@ a {
     background: linear-gradient(to bottom, Black, Black, Lightgray);
 }
 
-#curriculum a:nth-child(n+3) div:nth-child(1) .course-detail p:nth-child(2) {
+#curriculum a:nth-child(n + 3) div:nth-child(1) .course-detail p:nth-child(2) {
     margin-top: 48px;
 }
 
@@ -856,11 +857,10 @@ footer {
         display: none;
     }
     .mobile-spacer {
-        display: block!Important;
+        display: block !Important;
     }
 }
 
 .change-cursor {
     cursor: pointer;
 }
-
