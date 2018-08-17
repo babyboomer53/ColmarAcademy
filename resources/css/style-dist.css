@@ -20,7 +20,7 @@ html {
 
 @font-face {
     font-family: "Ringbearer Medium";
-    src: url(../../resources/fonts/RINGM.ttf) format("truetype");
+    src: url(../../resources/fonts/RINGM.TTF) format("truetype");
 }
 
 @font-face {
