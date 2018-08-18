@@ -611,13 +611,9 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    color: Black;
-    background-color: var(--OldBrickRed);
-    background-color: Beige;
-    background: -webkit-gradient(linear, left top, right top, from(black), color-stop(gray), color-stop(lightgray), color-stop(gray), to(black));
-    background: -webkit-linear-gradient(left, black, gray, lightgray, gray, black);
-    background: -o-linear-gradient(left, black, gray, lightgray, gray, black);
-    background: linear-gradient(to right, black, gray, lightgray, gray, black);
+    color: White;
+    background-color: Black;
+    opacity: 0.75;
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 6px;
@@ -641,7 +637,7 @@ footer {
 }
 
 .close-button:hover {
-    opacity: 0.8;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -652,7 +648,7 @@ footer {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: White;
+    background-color: Red;
 }
 
 .close-button:before {

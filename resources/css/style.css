@@ -526,10 +526,9 @@ footer {
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
-    color: Black;
-    background-color: var(--OldBrickRed);
-    background-color: Beige;
-    background: linear-gradient(to right, black, gray, lightgray, gray, black);
+    color: White;
+    background-color: Black;
+    opacity: 0.75;
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 6px;
@@ -550,7 +549,7 @@ footer {
 }
 
 .close-button:hover {
-    opacity: 0.8;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -561,7 +560,7 @@ footer {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: White;
+    background-color: Red;
 }
 
 .close-button:before {
