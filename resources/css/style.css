@@ -528,7 +528,7 @@ footer {
     justify-content: space-between;
     color: Black;
     background-color: Black;
-    background: linear-gradient(to right, black, gray,lightgray, gray, black);
+    background: linear-gradient(to right, black, gray, lightgray, gray, black);
     opacity: 1;
     font-weight: 600;
     padding-bottom: 10px;
@@ -659,7 +659,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     #context-menu {
-        display: none;
+        display: none !Important;
     }
     html {
         color: var(--ColmarGreen);
@@ -771,7 +771,7 @@ footer {
     #general-info-mobile div h2:nth-child(3) {
         font-size: 1rem;
     }
-    
+
     #general-info-mobile div a {
         color: red;
         color: var(--BrickRed);
