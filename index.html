@@ -19,7 +19,10 @@
 
             <div id="video-container" class="background">
                 <video preload autoplay muted class="background">
-                    <source id="mp4" src="./resources/videos/ColmarAcademy.mp4" type="video/mp4"> Your user agent does not support the HTML 5 video element.
+                    <source id="mp4" src="./resources/videos/ColmarAcademy.mp4" type="video/mp4">
+                    <source id="mp4" src="./resources/videos/ColmarAcademy.ogv" type="video/ogg">
+                    <source id="mp4" src="./resources/videos/ColmarAcademy.webm" type="video/webm">
+                    Your user agent does not support the HTML 5 video element.
                 </video>
                 <div id="diffuser"></div>
                 <div class="shadow"></div>
@@ -81,7 +84,9 @@
                 <div class="large-vertical-content-container">
                     <img src="./resources/images/information-main.jpg" alt="General information" />
                     <p>It doesn't hurt to keep practicing</p>
-                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat
+                        neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+                        dolor consequat, tristique ligula."</p>
                     <p>Emanuel, Sr Strategist at Hiring.com</p>
                 </div>
 
@@ -93,8 +98,9 @@
                             <h2 onMouseOver="show('countdown-timer')" onMouseOut="hide('countdown-timer')">Orientation date</h2>
                             -->
                             <h2>Orientation date</h2>
-                            <h2 onClick="show('countdown-timer')">Tue 10/11 &amp; Wed 10/12: 8am-3pm</h2>
-                            <a href="https://undergrad.stanford.edu/advising/first-year-students/new-student-orientation-nso" target="_blank">Read more</a>
+                            <h2 onClick="show('countdown-timer')">Tue 12/11 &amp; Wed 12/12: 8am-3pm</h2>
+                            <a href="https://undergrad.stanford.edu/advising/first-year-students/new-student-orientation-nso"
+                                target="_blank">Read more</a>
                         </div>
                     </div>
 
@@ -124,7 +130,8 @@
                 <div>
                     <h2>Orientation date</h2>
                     <h2 onClick="show('countdown-timer')">Tue 10/11 &amp; Wed 10/12: 8am-3pm</h2>
-                    <a href="https://undergrad.stanford.edu/advising/first-year-students/new-student-orientation-nso" target="_blank">Read more</a>
+                    <a href="https://undergrad.stanford.edu/advising/first-year-students/new-student-orientation-nso"
+                        target="_blank">Read more</a>
                 </div>
 
                 <img src="resources/images/information-campus-mobile.jpg" alt="Our campus" />
@@ -165,7 +172,8 @@
                         <div class="course-detail">
                             <p>Computer Art</p>
                             <p>COURSES</p>
-                            <p>Imaging &amp; design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+                            <p>Imaging &amp; design, Web Design, Motion Graphics &amp; Visual Effects, Computer
+                                Animation</p>
                         </div>
                         <div class="shadow"></div>
                     </div>
@@ -255,11 +263,15 @@
                 <h2 class="section-heading">Thesis Exhibit</h2>
                 <div class="video-container">
                     <video autoplay loop muted style="width: 100%; height: 100%; ">
-                        <source id="mp4-again" src="./resources/videos/thesis.mp4">
-                        <p>Your user agent does not support the HTML 5 video element.</p>
+                        <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                        <source src="./resources/videos/thesis.ogv" type="video/ogg">
+                        <source src="./resources/videos/thesis.webm" type="video/webm">
+                        Your user agent does not support the HTML 5 video element.
                     </video>
                     <p>Reimagine urban</p>
-                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula. "</p>
+                    <p>"Curabitur vitae I-ibera inl ipsum porttitor consequat. Aliquam et commodo lectus, nee consequat
+                        neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+                        dolor consequat, tristique ligula. "</p>
                 </div>
 
                 <div class="tile-container ">
@@ -312,10 +324,10 @@
                         <h2>Seconds</h2>
                     </div>
                     <div class="data">
-                        <div data-days="2018/10/11 00:00:01"></div>
-                        <div data-hours="2018/10/11 00:00:01"></div>
-                        <div data-minutes="2018/10/11 00:00:01"></div>
-                        <div data-seconds="2018/10/11 00:00:01"></div>
+                        <div data-days="2018/12/11 00:00:01"></div>
+                        <div data-hours="2018/12/11 00:00:01"></div>
+                        <div data-minutes="2018/12/11 00:00:01"></div>
+                        <div data-seconds="2018/12/11 00:00:01"></div>
                     </div>
                 </div>
             </div>
@@ -364,7 +376,8 @@
     </div>
 
     <div onclick="show('context-menu')" style="position: fixed; left: 0; bottom: 0; width: 100px; height: 100px;" class="change-cursor"></div>
-    <div onclick="show('context-menu')" style="position: fixed; right: 0; bottom: 0; width: 100px; height: 100px;" class="change-cursor"></div>
+    <div onclick="show('context-menu')" style="position: fixed; right: 0; bottom: 0; width: 100px; height: 100px;"
+        class="change-cursor"></div>
 
     <script>
         function show(id) {
@@ -376,22 +389,20 @@
         function hide(id) {
             document.getElementById(id).style.display = "none";
         }
-
     </script>
 
     <script>
-        setTimeout(function() {
+        setTimeout(function () {
             document.getElementById('countdown-timer').className = 'close';
         }, 15000);
 
-        setTimeout(function() {
+        setTimeout(function () {
             document.getElementById('countdown-timer').style.display = 'none';
         }, 20000);
 
-        setTimeout(function() {
+        setTimeout(function () {
             document.getElementById('diffuser').style.opacity = '0.5';
         }, 30000);
-
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
