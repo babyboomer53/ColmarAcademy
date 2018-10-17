@@ -20,7 +20,7 @@ html {
 
 @font-face {
     font-family: "Ringbearer Medium";
-    src: url(../../resources/fonts/RINGM.TTF) format("truetype");
+    src: url(../../resources/fonts/RINGM.ttf) format("truetype");
 }
 
 @font-face {
@@ -112,7 +112,7 @@ a {
 }
 
 #navbar {
-    width: auto;
+    width: auto !important;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -152,6 +152,10 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
+}
+
+#logotype {
+    border-radius: 0px 4px 4px 0px;
 }
 
 #logotype h1 {
@@ -204,7 +208,7 @@ a {
 }
 
 #banner-content p:nth-child(2) {
-    color: Black;
+    color: Gray;
     font-family: 'Times New Roman', serif;
 }
 
@@ -226,7 +230,6 @@ a {
     background: -webkit-linear-gradient(left, Black, var(--ColmarGreen), Black);
     background: -o-linear-gradient(left, Black, var(--ColmarGreen), Black);
     background: linear-gradient(to Right, Black, var(--ColmarGreen), Black);
-    background: var(--ColmarGreen);
     border-radius: 4px;
     margin: 0;
     color: beige;
@@ -403,6 +406,7 @@ a {
     width: 25%;
     margin: 0 16px;
     margin-bottom: 2rem;
+    border-radius: 6px;
 }
 
 #curriculum .small-vertical-content-container {
@@ -411,7 +415,7 @@ a {
     font-family: Helvetica, Arial;
     color: Gray;
     Background-color: White;
-
+    border-radius: 6px;
 }
 
 #curriculum a div:nth-child(1):hover {
@@ -426,7 +430,7 @@ a {
     width: 100%;
     height: auto;
     z-index: -2;
-
+    border-radius: 6px 6px 0 0;
 }
 
 .small-vertical-content-container .course-detail {
@@ -440,10 +444,9 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
-
-    -webkit-box-shadow: inset 6px 6px 15px 5px rgba(0, 0, 0, 0.70);
-
-    box-shadow: inset 6px 6px 15px 5px rgba(0, 0, 0, 0.70);
+    border-radius: 6px;
+    -webkit-box-shadow: inset 6px 6px 10px 7px rgba(0, 0, 0, 0.70);
+    box-shadow: inset 6px 6px 10px 7px rgba(0, 0, 0, 0.70);
 }
 
 #curriculum .small-vertical-content-container p:nth-child(1) {
@@ -576,10 +579,8 @@ footer div {
 footer,
 section {
     background-color: beige;
-
+    border-radius: 4px;
     margin-bottom: 1rem !Important;
-    -webkit-box-shadow: inset 2px 2px 18px 2px Black;
-    box-shadow: inset 2px 2px 18px 2px Black;
 }
 
 footer {
@@ -608,11 +609,12 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
     color: Black;
+    background-color: var(--OldBrickRed);
+    background-color: Beige;
     background: -webkit-gradient(linear, left top, right top, from(black), color-stop(gray), color-stop(lightgray), color-stop(gray), to(black));
     background: -webkit-linear-gradient(left, black, gray, lightgray, gray, black);
     background: -o-linear-gradient(left, black, gray, lightgray, gray, black);
     background: linear-gradient(to right, black, gray, lightgray, gray, black);
-    opacity: 1;
     font-weight: 600;
     padding-bottom: 10px;
     border-radius: 6px;
@@ -636,7 +638,7 @@ footer {
 }
 
 .close-button:hover {
-    opacity: 1;
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -647,7 +649,7 @@ footer {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: Red;
+    background-color: White;
 }
 
 .close-button:before {
@@ -769,7 +771,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     #context-menu {
-        display: none !Important;
+        display: none;
     }
     html {
         color: var(--ColmarGreen);
@@ -840,7 +842,6 @@ footer {
         background: -webkit-linear-gradient(left, Black, var(--ColmarGreen), Black);
         background: -o-linear-gradient(left, Black, var(--ColmarGreen), Black);
         background: linear-gradient(to right, Black, var(--ColmarGreen), Black);
-        background: var(--ColmarGreen);
     }
     #banner-content {
         margin: 0;
@@ -853,7 +854,7 @@ footer {
         margin-bottom: 2rem;
     }
     #banner-content p:nth-child(2) {
-        color: Black;
+        color: darkcyan;
         font-style: italic;
         margin-bottom: 1.5rem;
     }
@@ -882,31 +883,25 @@ footer {
         margin-bottom: 1rem;
     }
     #general-info-mobile div p {
-        color: black;
         margin-bottom: 1rem;
     }
     #general-info-mobile div:nth-child(n) {
         margin-bottom: 4rem;
     }
     #general-info-mobile div h2:nth-child(2) {
-        color: black;
         margin-bottom: 1rem;
     }
     #general-info-mobile div h2:nth-child(3) {
         font-size: 1rem;
     }
-
     #general-info-mobile div a {
         color: red;
-        color: var(--BrickRed);
         font-weight: bold;
     }
-    /*
     #general-info-mobile div:nth-child(1) a {
         color: red;
         font-weight: bold;
     }
-    */
     #curriculum {
         display: none;
     }
